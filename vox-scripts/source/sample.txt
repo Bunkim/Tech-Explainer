@@ -1,0 +1,18 @@
+Sample: The $100 Habit
+Topic: Pipeline test covering all six scene templates (illustrative numbers)
+Total: 8 scenes
+
+CHAPTER 1: The $100 Habit (includes the cold-open hook)
+Scenes vox-001 to vox-008
+[
+{"id":"vox-001-hook","scene":"voxTitle","narration":"What if one hundred dollars a month, starting at twenty-five, could quietly turn into a quarter of a million?","data":{"kicker":"CHAPTER 1","title":"The $100 Habit","highlight":"$100"},"source":"none","imageIdea":"stack of dollar bills"},
+{"id":"vox-002-maya","scene":"voxCutout","narration":"Meet Maya. She is twenty-five, earns fifty-two thousand a year, and thinks investing is something you do later.","data":{"stat":{"value":"25","label":"YEARS OLD","icon":"calendar"}},"source":"hypothetical character","imageIdea":"young woman holding a coffee and a phone"},
+{"id":"vox-003-big","scene":"voxBigNumber","narration":"Investing one hundred a month at an illustrative seven percent, she ends up with about two hundred and sixty-two thousand by sixty-five.","data":{"value":262481,"prefix":"$","label":"AT AGE 65"},"source":"Python calc, 7% monthly compounding, illustration"},
+{"id":"vox-004-bars","scene":"voxChart","narration":"Wait until forty-five to start, and the same habit only grows to around fifty-two thousand. Same habit, very different ending.","data":{"title":"Same $100, different start","unit":"VALUE AT 65, USD","mode":"bar","items":[{"label":"START AT 45","value":52093},{"label":"START AT 25","value":262481,"highlight":true}]},"source":"Python calc, illustration"},
+{"id":"vox-005-line","scene":"voxChart","narration":"Most of the growth arrives in the final decade, which is exactly why the early years matter so much.","data":{"title":"Growth of $100 a month","unit":"USD, 7% ILLUSTRATIVE","mode":"line","labels":["25","35","45","55","65"],"series":[{"name":"Start 25","values":[0,17308,52093,121997,262481],"highlight":true},{"name":"Start 45","values":[0,0,0,17308,52093]}]},"source":"Python calc, illustration"},
+{"id":"vox-006-bubbles","scene":"voxBubbles","narration":"Three things do the heavy lifting here: time in the market, low fees, and simply never stopping the habit.","data":{"items":["TIME","LOW FEES","CONSISTENCY"]},"source":"none"},
+{"id":"vox-007-note","scene":"voxNote","narration":"Here is the clue most people miss. The first decade of saving does more work than the last two combined.","data":{"kicker":"THE CLUE","text":"The first decade of saving does more work than the last two combined.","highlight":"first decade"},"source":"Python calc, illustration"},
+{"id":"vox-008-subscribe","scene":"voxNote","narration":"Quick favor before we dive in. If you like money explained with real numbers, subscribe and turn on notifications so you don't miss a new video.","data":{"kicker":"SUBSCRIBE","text":"Subscribe and turn on notifications so you never miss a new video.","highlight":"Subscribe"},"source":"none"}
+]
+
+FACT-CHECK BEFORE PUBLISHING
