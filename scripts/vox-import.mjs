@@ -1,6 +1,8 @@
 #!/usr/bin/env node
-// Converts a tech-explainer / vox-finance-explainer scene script (.txt or .json)
-// into Remotion props at vox-scripts/<name>.json, then validates it.
+// Converts a scene script (.txt or .json) into Remotion props at vox-scripts/<name>.json,
+// then validates it. Handles both formats:
+//   - vox*  templates (light editorial)  -> VoxVideo composition
+//   - tech* templates (dark neon + videoConfig) -> TechVideo composition
 //
 //   node scripts/vox-import.mjs <script.txt|script.json> [--name my-video] [--no-captions]
 
@@ -56,13 +58,31 @@ function extractArrays(text) {
   return arrays;
 }
 
+/** Finds the object that contains "videoConfig" (tech format) and returns its value. */
+function extractVideoConfig(text) {
+  const key = text.indexOf('"videoConfig"');
+  if (key < 0) return undefined;
+  const start = text.lastIndexOf("{", key);
+  let depth = 0, inStr = false, esc = false;
+  for (let j = start; j < text.length; j++) {
+    const c = text[j];
+    if (inStr) { if (esc) esc = false; else if (c === "\\") esc = true; else if (c === '"') inStr = false; continue; }
+    if (c === '"') inStr = true;
+    else if (c === "{" || c === "[") depth++;
+    else if (c === "}" || c === "]") { depth--; if (depth === 0) return JSON.parse(text.slice(start, j + 1)).videoConfig; }
+  }
+  return undefined;
+}
+
 let title;
 let scenes;
+let videoConfig = extractVideoConfig(raw);
 const trimmed = raw.trim();
 if (trimmed.startsWith("{") || trimmed.startsWith("[")) {
   const parsed = JSON.parse(trimmed);
   scenes = Array.isArray(parsed) ? parsed : parsed.scenes;
   title = Array.isArray(parsed) ? undefined : parsed.title;
+  videoConfig = videoConfig ?? (Array.isArray(parsed) ? undefined : parsed.config ?? parsed.videoConfig);
 } else {
   scenes = extractArrays(raw).flat();
   title = raw.split("\n").map((l) => l.trim()).find(Boolean)?.replace(/^title:\s*/i, "");
@@ -82,6 +102,23 @@ const DEFAULT_SFX = {
   voxBigNumber: () => [["impact", 0, 0.5], ["pop", 1.35]],
   voxBubbles: (d) => [["whoosh", 0], ...(d?.items ?? []).slice(0, 4).map((_, i) => ["pop", [0.85, 1.5, 2.15, 2.85][i]])],
   voxNote: () => [["whoosh", 0], ["pop", 1.2]],
+  // tech* defaults (docs/tech-templates-spec.md)
+  techHeadline: () => [["whoosh", 0], ["impact", 0.35, 0.4]],
+  techChat: () => [["whoosh", 0], ["typewriter", 0.3]],
+  techChecklist: (d) => {
+    const n = (d?.items ?? []).length;
+    return [["whoosh", 0], ...Array.from({ length: n }, (_, i) => ["pin", 0.6 + i * 0.4]), ...(d?.stamp ? [["stamp", 0.6 + n * 0.4 + 0.1]] : [])];
+  },
+  techStatGrid: (d) => [["whoosh", 0], ...(d?.tiles ?? []).map((_, i) => ["pop", 0.5 + i * 0.3])],
+  techBigStat: () => [["impact", 0, 0.5], ["pop", 1.2]],
+  techBarRank: (d) => [["whoosh", 0], ...(d?.items ?? []).map((_, i) => ["pop", 0.7 + i * 0.3])],
+  techVersus: () => [["whoosh", 0], ["pop", 0.6], ["pop", 1.0]],
+  techFeed: (d) => [["whoosh", 0], ...(d?.items ?? []).map((_, i) => ["pin", 0.5 + i * 0.4])],
+  techSourceCheck: () => [["whoosh", 0], ["typewriter", 0.3], ["stamp", 1.6]],
+  techTimeline: (d) => [["whoosh", 0], ...(d?.nodes ?? []).map((_, i) => ["pin", 0.5 + i * 0.35])],
+  techHub: (d) => [["whoosh", 0], ...(d?.nodes ?? []).map((_, i) => ["pop", 0.6 + i * 0.25])],
+  techTerminal: () => [["typewriter", 0]],
+  techPhone: () => [["whoosh", 0], ["pop", 1.0]],
 };
 
 const sfxPath = (f) => {
@@ -127,6 +164,7 @@ const out = scenes.map((s, i) => {
     if (exists(rel)) scene[key] = rel;
     else warnings.push(`${id}: ${key} "${rel}" not found in public/ - dropped so the render doesn't break`);
   }
+  if (s.hud) scene.hud = s.hud;
   if (s.durationInSeconds) scene.durationInSeconds = Number(s.durationInSeconds);
   if (s.source) scene.source = s.source;
   if (s.imageIdea) scene.imageIdea = s.imageIdea;
@@ -135,9 +173,25 @@ const out = scenes.map((s, i) => {
 if (missingSfx.size) warnings.push(`SFX not found in public/ (skipped): ${[...missingSfx].join(", ")} - run "npm run vox:sfx" to generate defaults`);
 
 // ---------- 3. Validate (limits from the skill) ----------
-const TEMPLATES = ["voxTitle", "voxCutout", "voxChart", "voxBigNumber", "voxBubbles", "voxNote"];
 const len = (v) => String(v ?? "").length;
 const limit = (id, field, v, max) => { if (len(v) > max) warnings.push(`${id}: ${field} is ${len(v)} chars (max ${max}): "${v}"`); };
+const VOX = ["voxTitle", "voxCutout", "voxChart", "voxBigNumber", "voxBubbles", "voxNote"];
+const TECH = ["techHeadline", "techChat", "techChecklist", "techStatGrid", "techBigStat", "techBarRank", "techVersus",
+  "techFeed", "techSourceCheck", "techTimeline", "techHub", "techTerminal", "techPhone"];
+const format = out.some((s) => String(s.scene).startsWith("tech")) ? "tech" : "vox";
+const TEMPLATES = format === "tech" ? TECH : VOX;
+const count = (id, field, arr, min, max) => {
+  if (!Array.isArray(arr) || arr.length < min || arr.length > max) { errors.push(`${id}: ${field} needs ${min}-${max} entries (has ${Array.isArray(arr) ? arr.length : "none"})`); return false; }
+  return true;
+};
+if (format === "tech") {
+  if (!videoConfig?.steps?.length) warnings.push("No videoConfig.steps found - the step bar will be empty");
+  else {
+    if (videoConfig.steps.length < 3 || videoConfig.steps.length > 8) warnings.push(`videoConfig.steps has ${videoConfig.steps.length} entries (spec 3-8)`);
+    videoConfig.steps.forEach((st) => limit("videoConfig", "step", st, 10));
+  }
+  limit("videoConfig", "footer", videoConfig?.footer, 50);
+}
 const ids = new Set();
 let totalWords = 0;
 
@@ -183,6 +237,69 @@ out.forEach((s, i) => {
       limit(id, "kicker", d.kicker, 16); limit(id, "text", d.text, 90);
       if (d.highlight && !String(d.text).includes(d.highlight)) warnings.push(`${id}: highlight "${d.highlight}" not in text`);
       break;
+    // ---- tech* (limits from docs/tech-templates-spec.md) ----
+    case "techHeadline":
+      if (!d.main) errors.push(`${id}: techHeadline needs data.main`);
+      limit(id, "kicker", d.kicker, 20); limit(id, "top", d.top, 22); limit(id, "main", d.main, 16);
+      break;
+    case "techChat":
+      limit(id, "window", d.window, 18); limit(id, "sender", d.sender, 20);
+      if (count(id, "lines", d.lines, 1, 4)) d.lines.forEach((l) => limit(id, "line", l, 52));
+      break;
+    case "techChecklist":
+      limit(id, "title", d.title, 24); limit(id, "stamp", d.stamp, 10);
+      if (!["progress", "done", "fail"].includes(d.state)) errors.push(`${id}: state must be progress|done|fail`);
+      if (count(id, "items", d.items, 3, 6)) d.items.forEach((t) => limit(id, "item", t, 28));
+      break;
+    case "techStatGrid":
+      if (count(id, "tiles", d.tiles, 2, 4)) d.tiles.forEach((t) => { limit(id, "tile.label", t.label, 16); limit(id, "tile.value", t.value, 8); });
+      break;
+    case "techBigStat":
+      if (typeof d.value !== "number") errors.push(`${id}: techBigStat value must be a number`);
+      limit(id, "prefix", d.prefix, 2); limit(id, "suffix", d.suffix, 4); limit(id, "label", d.label, 28); limit(id, "sub", d.sub, 44);
+      if (d.points && count(id, "points", d.points, 0, 4)) d.points.forEach((p) => limit(id, "point", p, 20));
+      break;
+    case "techBarRank":
+      limit(id, "title", d.title, 32); limit(id, "unit", d.unit, 16);
+      if (count(id, "items", d.items, 2, 5)) d.items.forEach((it) => {
+        limit(id, "label", it.label, 14);
+        if (typeof it.value !== "number" || it.value <= 0) errors.push(`${id}: bar "${it.label}" needs a value > 0`);
+      });
+      break;
+    case "techVersus":
+      for (const side of ["left", "right"]) {
+        if (!d[side]) { errors.push(`${id}: techVersus needs data.${side}`); continue; }
+        limit(id, `${side}.title`, d[side].title, 18);
+        if (count(id, `${side}.items`, d[side].items, 2, 3)) d[side].items.forEach((t) => limit(id, `${side} item`, t, 26));
+      }
+      break;
+    case "techFeed":
+      limit(id, "title", d.title, 20);
+      if (count(id, "items", d.items, 2, 4)) d.items.forEach((it) => { limit(id, "tag", it.tag, 14); limit(id, "text", it.text, 40); });
+      break;
+    case "techSourceCheck":
+      limit(id, "claim", d.claim, 100); limit(id, "source", d.source, 32); limit(id, "detail", d.detail, 40); limit(id, "verdict", d.verdict, 16);
+      if (d.highlight && !String(d.claim).includes(d.highlight)) warnings.push(`${id}: highlight "${d.highlight}" not in claim`);
+      break;
+    case "techTimeline":
+      limit(id, "title", d.title, 24);
+      if (count(id, "nodes", d.nodes, 3, 6)) {
+        d.nodes.forEach((n) => { limit(id, "node.label", n.label, 10); limit(id, "node.sub", n.sub, 14); });
+        if (!(d.active >= 0 && d.active < d.nodes.length)) errors.push(`${id}: active must be 0-${d.nodes.length - 1}`);
+      }
+      break;
+    case "techHub":
+      limit(id, "center", d.center, 16);
+      if (count(id, "nodes", d.nodes, 3, 6)) d.nodes.forEach((n) => limit(id, "node", n, 14));
+      break;
+    case "techTerminal":
+      limit(id, "title", d.title, 20);
+      if (count(id, "lines", d.lines, 2, 6)) d.lines.forEach((l) => limit(id, "line", l, 44));
+      break;
+    case "techPhone":
+      limit(id, "app", d.app, 16); limit(id, "screenTitle", d.screenTitle, 20); limit(id, "value", d.value, 12); limit(id, "banner", d.banner, 30);
+      if (count(id, "rows", d.rows, 1, 3)) d.rows.forEach((r) => limit(id, "row", r, 30));
+      break;
   }
 });
 
@@ -199,12 +316,17 @@ if (errors.length) {
   errors.forEach((e) => console.error("  - " + e));
   process.exit(1);
 }
-fs.writeFileSync(outFile, JSON.stringify({ title, captions, scenes: out }, null, 2) + "\n");
+const props = { title, captions, scenes: out };
+if (format === "tech") {
+  // The ticker is intentionally not rendered, so it is not carried over.
+  props.config = { theme: videoConfig?.theme ?? "darkNeon", steps: videoConfig?.steps ?? [], footer: videoConfig?.footer };
+}
+fs.writeFileSync(outFile, JSON.stringify(props, null, 2) + "\n");
 console.log(`✔ ${out.length} scenes, ${totalWords} words, ~${Math.floor(seconds / 60)}m${String(Math.round(seconds % 60)).padStart(2, "0")}s`);
-console.log(`✔ wrote ${path.relative(ROOT, outFile)}`);
+console.log(`✔ wrote ${path.relative(ROOT, outFile)} (${format === "tech" ? "TechVideo" : "VoxVideo"} composition)`);
 if (warnings.length) {
   console.log(`\n⚠ ${warnings.length} warning(s):`);
   warnings.forEach((w) => console.log("  - " + w));
 }
-console.log(`\nPreview: npm run dev  (pick VoxVideo, then load props from ${path.relative(ROOT, outFile)})`);
+console.log(`\nPreview: npm run dev  (pick ${format === "tech" ? "TechVideo" : "VoxVideo"}, then load props from ${path.relative(ROOT, outFile)})`);
 console.log(`Render:  npm run vox:render -- ${name}`);

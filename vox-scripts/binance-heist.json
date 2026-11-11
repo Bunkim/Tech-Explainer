@@ -1,0 +1,3991 @@
+{
+  "title": "The $6.3 Billion Job Interview",
+  "captions": true,
+  "scenes": [
+    {
+      "id": "tech-001-hook-not-code",
+      "scene": "techHeadline",
+      "narration": "On October twenty-ninth, the world's biggest crypto exchange lost about six point three billion dollars. Nobody cracked its encryption.",
+      "data": {
+        "kicker": "OCTOBER 29, 2026",
+        "top": "NOBODY CRACKED IT",
+        "main": "$6.3 BILLION"
+      },
+      "sfx": [
+        {
+          "file": "sfx/whoosh.wav",
+          "at": 0
+        },
+        {
+          "file": "sfx/impact.wav",
+          "at": 0.35,
+          "volume": 0.4
+        }
+      ],
+      "hud": {
+        "step": 1,
+        "status": "INCIDENT DETECTED"
+      },
+      "source": "NPR Oct 30 2026; Binance initial report (Nov 3) describes access via employees and the signing service",
+      "imageIdea": "dark exchange dashboard, balances glitching red"
+    },
+    {
+      "id": "tech-002-hook-interview",
+      "scene": "techChat",
+      "narration": "Instead, months earlier, an engineer got a friendly message on a real job site. A project director wanted to talk about an exciting new role.",
+      "data": {
+        "window": "Job platform",
+        "sender": "Project Director",
+        "lines": [
+          "Hi! Loved your profile.",
+          "We have a senior role that fits you.",
+          "Free for a quick call this week?"
+        ],
+        "typing": true
+      },
+      "sfx": [
+        {
+          "file": "sfx/whoosh.wav",
+          "at": 0
+        },
+        {
+          "file": "sfx/typewriter.wav",
+          "at": 0.3
+        }
+      ],
+      "hud": {
+        "step": 1
+      },
+      "source": "Binance initial report via Fortune and SafeDep (Nov 3 2026)",
+      "imageIdea": "recruiter DM on a dark job-site UI, generic avatar"
+    },
+    {
+      "id": "tech-003-hook-per-second",
+      "scene": "techBigStat",
+      "narration": "Spread six point three billion over twenty minutes and you get about five million dollars leaving, every single second.",
+      "data": {
+        "value": 5.25,
+        "prefix": "$",
+        "suffix": "M",
+        "label": "PER SECOND, ON AVERAGE",
+        "sub": "$6.3B ÷ 1,200 seconds",
+        "points": []
+      },
+      "sfx": [
+        {
+          "file": "sfx/impact.wav",
+          "at": 0,
+          "volume": 0.5
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 1.2
+        }
+      ],
+      "hud": {
+        "step": 1
+      },
+      "source": "Calc 6.3e9/1200; TRM: most of it moved in ~20 minutes",
+      "imageIdea": "counter spinning up"
+    },
+    {
+      "id": "tech-004-hook-question",
+      "scene": "techVersus",
+      "narration": "So how do you rob a vault guarded by billions in security? You skip the vault, and you go after the people who can open it.",
+      "data": {
+        "left": {
+          "title": "WHAT THEY SKIPPED",
+          "items": [
+            "Breaking encryption",
+            "Guessing keys"
+          ]
+        },
+        "right": {
+          "title": "WHAT THEY HIT",
+          "items": [
+            "Engineers' laptops",
+            "Trust and permissions"
+          ]
+        },
+        "leftTone": "good"
+      },
+      "sfx": [
+        {
+          "file": "sfx/whoosh.wav",
+          "at": 0
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 0.6
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 1
+        }
+      ],
+      "hud": {
+        "step": 1
+      },
+      "source": "Binance report via Fortune: mainly conventional phishing plus malware",
+      "imageIdea": "vault left, engineer silhouette right"
+    },
+    {
+      "id": "tech-005-hook-promise",
+      "scene": "techTimeline",
+      "narration": "In this deep dive, we follow every step: one bad download, a fake job, an AI shortcut, and the twenty minutes that emptied the wallets.",
+      "data": {
+        "title": "THE ATTACK PATH",
+        "nodes": [
+          {
+            "label": "JUNE",
+            "sub": "Bad download"
+          },
+          {
+            "label": "SEPT",
+            "sub": "Fake job"
+          },
+          {
+            "label": "OCT 20",
+            "sub": "AI pivot"
+          },
+          {
+            "label": "OCT 29",
+            "sub": "The heist"
+          }
+        ],
+        "active": 0
+      },
+      "sfx": [
+        {
+          "file": "sfx/whoosh.wav",
+          "at": 0
+        },
+        {
+          "file": "sfx/pin.wav",
+          "at": 0.5
+        },
+        {
+          "file": "sfx/pin.wav",
+          "at": 0.85
+        },
+        {
+          "file": "sfx/pin.wav",
+          "at": 1.2
+        },
+        {
+          "file": "sfx/pin.wav",
+          "at": 1.55
+        }
+      ],
+      "hud": {
+        "step": 1
+      },
+      "source": "Binance initial report (Nov 3 2026)",
+      "imageIdea": "timeline nodes lighting in order"
+    },
+    {
+      "id": "tech-006-subscribe",
+      "scene": "techHeadline",
+      "narration": "Quick favor before we dive in. If you like money and tech explained with real numbers, subscribe and turn on notifications so you don't miss a new video.",
+      "data": {
+        "kicker": "SUBSCRIBE",
+        "top": "QUICK FAVOR",
+        "main": "SUBSCRIBE"
+      },
+      "sfx": [
+        {
+          "file": "sfx/whoosh.wav",
+          "at": 0
+        },
+        {
+          "file": "sfx/impact.wav",
+          "at": 0.35,
+          "volume": 0.4
+        }
+      ],
+      "hud": {
+        "step": 1
+      },
+      "source": "none",
+      "imageIdea": "neon subscribe button and bell"
+    },
+    {
+      "id": "tech-007-ch1-title",
+      "scene": "techHeadline",
+      "narration": "Chapter one. Before we get into how it happened, let's understand just how big this theft really is.",
+      "data": {
+        "kicker": "CHAPTER 1",
+        "top": "THE BIGGEST",
+        "main": "HEIST EVER"
+      },
+      "sfx": [
+        {
+          "file": "sfx/whoosh.wav",
+          "at": 0
+        },
+        {
+          "file": "sfx/impact.wav",
+          "at": 0.35,
+          "volume": 0.4
+        }
+      ],
+      "hud": {
+        "step": 1
+      },
+      "source": "none",
+      "imageIdea": "glitch title over scrolling ticker"
+    },
+    {
+      "id": "tech-008-ch1-ten-chains",
+      "scene": "techStatGrid",
+      "narration": "According to blockchain intelligence firm TRM Labs, the money left Binance wallets on ten different blockchains, and most of it moved in about twenty minutes.",
+      "data": {
+        "tiles": [
+          {
+            "label": "STOLEN",
+            "value": "$6.3B",
+            "trend": "up"
+          },
+          {
+            "label": "BLOCKCHAINS",
+            "value": "10",
+            "trend": "flat"
+          },
+          {
+            "label": "MAIN WINDOW",
+            "value": "~20 min",
+            "trend": "flat"
+          },
+          {
+            "label": "RECORD",
+            "value": "#1",
+            "trend": "up"
+          }
+        ]
+      },
+      "sfx": [
+        {
+          "file": "sfx/whoosh.wav",
+          "at": 0
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 0.5
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 0.8
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 1.1
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 1.4
+        }
+      ],
+      "hud": {
+        "step": 1,
+        "status": "MEASURING DAMAGE"
+      },
+      "source": "TRM Labs via NPR, Oct 30 2026",
+      "imageIdea": "four stat tiles"
+    },
+    {
+      "id": "tech-009-ch1-vs-bybit",
+      "scene": "techBarRank",
+      "narration": "The previous record was the Bybit hack in February twenty twenty-five, at around one and a half billion. This one is roughly four times bigger.",
+      "data": {
+        "title": "LARGEST CRYPTO HEISTS",
+        "unit": "US$ billions",
+        "items": [
+          {
+            "label": "Binance '26",
+            "value": 6.3,
+            "highlight": true
+          },
+          {
+            "label": "Bybit '25",
+            "value": 1.5
+          }
+        ]
+      },
+      "sfx": [
+        {
+          "file": "sfx/whoosh.wav",
+          "at": 0
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 0.7
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 1
+        }
+      ],
+      "hud": {
+        "step": 1
+      },
+      "source": "FBI on Bybit (~$1.5B, Feb 2025); calc 6.3/1.5 = 4.2x",
+      "imageIdea": "two neon bars"
+    },
+    {
+      "id": "tech-010-ch1-vs-world",
+      "scene": "techBarRank",
+      "narration": "Here's the wild part. Chainalysis says all crypto theft worldwide in twenty twenty-five added up to about three point four billion. This single heist is almost double that.",
+      "data": {
+        "title": "ONE HEIST VS A WHOLE YEAR",
+        "unit": "US$ billions",
+        "items": [
+          {
+            "label": "Binance hack",
+            "value": 6.3,
+            "highlight": true
+          },
+          {
+            "label": "All of 2025",
+            "value": 3.4
+          },
+          {
+            "label": "DPRK 2025",
+            "value": 2.02
+          }
+        ]
+      },
+      "sfx": [
+        {
+          "file": "sfx/whoosh.wav",
+          "at": 0
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 0.7
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 1
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 1.3
+        }
+      ],
+      "hud": {
+        "step": 1
+      },
+      "source": "Chainalysis 2026 Crypto Crime report (Dec 18 2025); calc 6.3/3.4 = 1.85x",
+      "imageIdea": "three bars"
+    },
+    {
+      "id": "tech-011-ch1-cumulative",
+      "scene": "techBigStat",
+      "narration": "Chainalysis tracked about six point seven five billion stolen by North Korea-linked hackers since twenty twenty-two. This one job equals ninety-three percent of that.",
+      "data": {
+        "value": 93,
+        "prefix": "",
+        "suffix": "%",
+        "label": "OF ITS FOUR-YEAR TOTAL",
+        "sub": "$6.3B vs $6.75B tracked since 2022",
+        "points": []
+      },
+      "sfx": [
+        {
+          "file": "sfx/impact.wav",
+          "at": 0,
+          "volume": 0.5
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 1.2
+        }
+      ],
+      "hud": {
+        "step": 1
+      },
+      "source": "Chainalysis via The Record (Dec 2025); calc 6.3/6.75 = 0.93",
+      "imageIdea": "huge percentage with ring"
+    },
+    {
+      "id": "tech-012-ch1-who",
+      "scene": "techFeed",
+      "narration": "So who did it? The FBI says North Korea's TraderTraitor group, the unit also blamed for Bybit. TRM, Elliptic and Chainalysis reached the same conclusion.",
+      "data": {
+        "title": "ATTRIBUTION",
+        "items": [
+          {
+            "tag": "FBI",
+            "text": "Names North Korea's TraderTraitor"
+          },
+          {
+            "tag": "TRM LABS",
+            "text": "Matches earlier Bybit hack features"
+          },
+          {
+            "tag": "ELLIPTIC",
+            "text": "Links theft to North Korea"
+          }
+        ]
+      },
+      "sfx": [
+        {
+          "file": "sfx/whoosh.wav",
+          "at": 0
+        },
+        {
+          "file": "sfx/pin.wav",
+          "at": 0.5
+        },
+        {
+          "file": "sfx/pin.wav",
+          "at": 0.9
+        },
+        {
+          "file": "sfx/pin.wav",
+          "at": 1.3
+        }
+      ],
+      "hud": {
+        "step": 1
+      },
+      "source": "NPR Oct 30-31 2026; TechCrunch Oct 30; CNBC Nov 3",
+      "imageIdea": "alert cards sliding in"
+    },
+    {
+      "id": "tech-013-ch1-denial",
+      "scene": "techSourceCheck",
+      "narration": "North Korea denies it. Kim Jong Un's sister called the accusation a grave political provocation. So we'll stick to what investigators say: the FBI attributes it to North Korea.",
+      "data": {
+        "claim": "North Korea denies involvement in the Binance hack.",
+        "highlight": "denies",
+        "source": "State media, via CNBC",
+        "detail": "Kim Yo Jong statement, Nov 2026",
+        "verdict": "DISPUTED"
+      },
+      "sfx": [
+        {
+          "file": "sfx/whoosh.wav",
+          "at": 0
+        },
+        {
+          "file": "sfx/typewriter.wav",
+          "at": 0.3
+        },
+        {
+          "file": "sfx/stamp.wav",
+          "at": 1.6
+        }
+      ],
+      "hud": {
+        "step": 1
+      },
+      "source": "CNBC Nov 3 2026",
+      "imageIdea": "claim card with amber stamp"
+    },
+    {
+      "id": "tech-014-ch1-rehook",
+      "scene": "techHeadline",
+      "narration": "To understand how they pulled it off, you first need to know how an exchange actually guards billions of dollars. That's where the weak spot hides.",
+      "data": {
+        "kicker": "UP NEXT",
+        "top": "INSIDE",
+        "main": "THE VAULT"
+      },
+      "sfx": [
+        {
+          "file": "sfx/whoosh.wav",
+          "at": 0
+        },
+        {
+          "file": "sfx/impact.wav",
+          "at": 0.35,
+          "volume": 0.4
+        }
+      ],
+      "hud": {
+        "step": 1
+      },
+      "source": "none",
+      "imageIdea": "vault door schematic glowing"
+    },
+    {
+      "id": "tech-015-ch2-title",
+      "scene": "techHeadline",
+      "narration": "Chapter two. An exchange doesn't keep money in one big box. It splits it, mostly to balance two things: safety and speed.",
+      "data": {
+        "kicker": "CHAPTER 2",
+        "top": "HOW YOU GUARD",
+        "main": "BILLIONS"
+      },
+      "sfx": [
+        {
+          "file": "sfx/whoosh.wav",
+          "at": 0
+        },
+        {
+          "file": "sfx/impact.wav",
+          "at": 0.35,
+          "volume": 0.4
+        }
+      ],
+      "hud": {
+        "step": 2
+      },
+      "source": "General explainer",
+      "imageIdea": "glitch title over wallet schematic"
+    },
+    {
+      "id": "tech-016-ch2-hot-cold",
+      "scene": "techVersus",
+      "narration": "Cold wallets sit offline, slow but very safe. Hot wallets stay online, so customers can withdraw in minutes. This attack hit the hot wallets.",
+      "data": {
+        "left": {
+          "title": "COLD WALLETS",
+          "items": [
+            "Offline",
+            "Slow to move",
+            "Hard to reach"
+          ]
+        },
+        "right": {
+          "title": "HOT WALLETS",
+          "items": [
+            "Online",
+            "Fast withdrawals",
+            "Attack target"
+          ]
+        },
+        "leftTone": "good"
+      },
+      "sfx": [
+        {
+          "file": "sfx/whoosh.wav",
+          "at": 0
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 0.6
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 1
+        }
+      ],
+      "hud": {
+        "step": 2
+      },
+      "source": "General explainer; Binance says funds left hot wallets (SafeDep, Nov 3)",
+      "imageIdea": "two vault panels, right one glowing red"
+    },
+    {
+      "id": "tech-017-ch2-why-hot",
+      "scene": "techFeed",
+      "narration": "Why keep so much online at all? Because customers expect withdrawals in minutes, not hours. Every exchange trades a bit of safety for that speed.",
+      "data": {
+        "title": "THE TRADE-OFF",
+        "items": [
+          {
+            "tag": "CUSTOMERS",
+            "text": "Want withdrawals in minutes"
+          },
+          {
+            "tag": "EXCHANGE",
+            "text": "Keeps part of funds online"
+          },
+          {
+            "tag": "RISK",
+            "text": "Online funds can be reached"
+          }
+        ]
+      },
+      "sfx": [
+        {
+          "file": "sfx/whoosh.wav",
+          "at": 0
+        },
+        {
+          "file": "sfx/pin.wav",
+          "at": 0.5
+        },
+        {
+          "file": "sfx/pin.wav",
+          "at": 0.9
+        },
+        {
+          "file": "sfx/pin.wav",
+          "at": 1.3
+        }
+      ],
+      "hud": {
+        "step": 2
+      },
+      "source": "General explainer",
+      "imageIdea": "trade-off cards: speed vs safety"
+    },
+    {
+      "id": "tech-018-ch2-path",
+      "scene": "techChecklist",
+      "narration": "On a typical exchange, a withdrawal passes through a chain of checks: your request, risk checks, limits, and finally a system that signs the transaction.",
+      "data": {
+        "title": "NORMAL WITHDRAWAL",
+        "items": [
+          "Customer request",
+          "Risk checks",
+          "Limits and rules",
+          "Signing service signs",
+          "Sent to blockchain"
+        ],
+        "state": "done"
+      },
+      "sfx": [
+        {
+          "file": "sfx/whoosh.wav",
+          "at": 0
+        },
+        {
+          "file": "sfx/pin.wav",
+          "at": 0.6
+        },
+        {
+          "file": "sfx/pin.wav",
+          "at": 1
+        },
+        {
+          "file": "sfx/pin.wav",
+          "at": 1.4
+        },
+        {
+          "file": "sfx/pin.wav",
+          "at": 1.8
+        },
+        {
+          "file": "sfx/pin.wav",
+          "at": 2.2
+        }
+      ],
+      "hud": {
+        "step": 2
+      },
+      "source": "General explainer of typical exchange withdrawal flow",
+      "imageIdea": "pipeline checklist ticking green"
+    },
+    {
+      "id": "tech-019-ch2-signing",
+      "scene": "techHub",
+      "narration": "That last step matters most. Binance has an internal wallet signing service. Whatever it signs, the blockchain treats as a genuine order from Binance.",
+      "data": {
+        "center": "SIGNING SERVICE",
+        "nodes": [
+          "Withdrawals",
+          "Risk engine",
+          "Hot wallets",
+          "Blockchain"
+        ],
+        "mode": "hub",
+        "flow": "out"
+      },
+      "sfx": [
+        {
+          "file": "sfx/whoosh.wav",
+          "at": 0
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 0.6
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 0.85
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 1.1
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 1.35
+        }
+      ],
+      "hud": {
+        "step": 2
+      },
+      "source": "Binance report via Breach Ledger, mlq.ai (internal wallet signing service)",
+      "imageIdea": "central signing node with outgoing beams"
+    },
+    {
+      "id": "tech-020-ch2-mpc",
+      "scene": "techHub",
+      "narration": "Binance's hot wallets use multi-party computation, or MPC. The key is split into pieces held by different parties, and they must cooperate to sign.",
+      "data": {
+        "center": "SPLIT KEY",
+        "nodes": [
+          "Share 1",
+          "Share 2",
+          "Share 3",
+          "Signature"
+        ],
+        "mode": "orbit",
+        "flow": "in"
+      },
+      "sfx": [
+        {
+          "file": "sfx/whoosh.wav",
+          "at": 0
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 0.6
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 0.85
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 1.1
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 1.35
+        }
+      ],
+      "hud": {
+        "step": 2
+      },
+      "source": "SafeDep (hot wallet uses MPC); general MPC explainer",
+      "imageIdea": "key shards orbiting a core"
+    },
+    {
+      "id": "tech-021-ch2-mpc-why",
+      "scene": "techChecklist",
+      "narration": "That's a strong design. Steal one piece and you get nothing. No single employee, server or laptop holds the whole key.",
+      "data": {
+        "title": "WHAT MPC PROTECTS",
+        "items": [
+          "No single full key",
+          "One stolen share is useless",
+          "No single point of failure"
+        ],
+        "state": "done",
+        "stamp": "STRONG"
+      },
+      "sfx": [
+        {
+          "file": "sfx/whoosh.wav",
+          "at": 0
+        },
+        {
+          "file": "sfx/pin.wav",
+          "at": 0.6
+        },
+        {
+          "file": "sfx/pin.wav",
+          "at": 1
+        },
+        {
+          "file": "sfx/pin.wav",
+          "at": 1.4
+        },
+        {
+          "file": "sfx/stamp.wav",
+          "at": 2.1
+        }
+      ],
+      "hud": {
+        "step": 2
+      },
+      "source": "General MPC explainer",
+      "imageIdea": "checklist with green shield"
+    },
+    {
+      "id": "tech-022-ch2-clue",
+      "scene": "techVersus",
+      "narration": "But here's the clue most people miss. MPC protects the key, not the request. If attackers get the signing system to sign, the math works perfectly for them.",
+      "data": {
+        "left": {
+          "title": "PROTECTED",
+          "items": [
+            "The key itself",
+            "Key storage"
+          ]
+        },
+        "right": {
+          "title": "EXPOSED",
+          "items": [
+            "Who asks to sign",
+            "What gets signed"
+          ]
+        },
+        "leftTone": "good"
+      },
+      "sfx": [
+        {
+          "file": "sfx/whoosh.wav",
+          "at": 0
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 0.6
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 1
+        }
+      ],
+      "hud": {
+        "step": 2
+      },
+      "source": "SecurityHQ analysis: protect the transaction path, not just the key",
+      "imageIdea": "split panel, request arrow glowing red"
+    },
+    {
+      "id": "tech-023-ch2-headline-lesson",
+      "scene": "techSourceCheck",
+      "narration": "One security firm summed it up: the lesson is to protect the transaction path, not just the key. Keep that phrase in mind for the rest of this video.",
+      "data": {
+        "claim": "Protect the transaction path, not just the key.",
+        "highlight": "transaction path",
+        "source": "SecurityHQ analysis",
+        "detail": "On the Binance incident, Nov 2026",
+        "verdict": "KEY LESSON"
+      },
+      "sfx": [
+        {
+          "file": "sfx/whoosh.wav",
+          "at": 0
+        },
+        {
+          "file": "sfx/typewriter.wav",
+          "at": 0.3
+        },
+        {
+          "file": "sfx/stamp.wav",
+          "at": 1.6
+        }
+      ],
+      "hud": {
+        "step": 2
+      },
+      "source": "SecurityHQ blog title/thesis",
+      "imageIdea": "claim card with neon highlight"
+    },
+    {
+      "id": "tech-024-ch2-what-needed",
+      "scene": "techStatGrid",
+      "narration": "So the attackers didn't need the key. They needed three things: a way into a laptop, a way to the right engineers, and permission to run code near the signer.",
+      "data": {
+        "tiles": [
+          {
+            "label": "A WAY IN",
+            "value": "Laptop",
+            "trend": "flat"
+          },
+          {
+            "label": "THE RIGHT PEOPLE",
+            "value": "Wallet",
+            "trend": "flat"
+          },
+          {
+            "label": "PERMISSION",
+            "value": "Token",
+            "trend": "up"
+          }
+        ]
+      },
+      "sfx": [
+        {
+          "file": "sfx/whoosh.wav",
+          "at": 0
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 0.5
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 0.8
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 1.1
+        }
+      ],
+      "hud": {
+        "step": 2
+      },
+      "source": "Analysis based on Binance report sequence",
+      "imageIdea": "three tiles lighting up in order"
+    },
+    {
+      "id": "tech-025-ch2-rehook",
+      "scene": "techHeadline",
+      "narration": "Step one was finding out who those right engineers were. That started in June, with one search and one wrong click.",
+      "data": {
+        "kicker": "UP NEXT",
+        "top": "IT STARTED WITH",
+        "main": "ONE CLICK"
+      },
+      "sfx": [
+        {
+          "file": "sfx/whoosh.wav",
+          "at": 0
+        },
+        {
+          "file": "sfx/impact.wav",
+          "at": 0.35,
+          "volume": 0.4
+        }
+      ],
+      "hud": {
+        "step": 2
+      },
+      "source": "Binance report",
+      "imageIdea": "cursor over a glitching search result"
+    },
+    {
+      "id": "tech-026-ch3-title",
+      "scene": "techHeadline",
+      "narration": "Chapter three. June twenty twenty-six, about four months before the heist. Binance calls the first victim Engineer A.",
+      "data": {
+        "kicker": "CHAPTER 3",
+        "top": "JUNE 2026",
+        "main": "THE FOOTHOLD"
+      },
+      "sfx": [
+        {
+          "file": "sfx/whoosh.wav",
+          "at": 0
+        },
+        {
+          "file": "sfx/impact.wav",
+          "at": 0.35,
+          "volume": 0.4
+        }
+      ],
+      "hud": {
+        "step": 3
+      },
+      "source": "Binance initial report",
+      "imageIdea": "calendar flipping to June"
+    },
+    {
+      "id": "tech-027-ch3-engineer-a",
+      "scene": "techChat",
+      "narration": "Engineer A worked on the Wallet DevOps team, the people who keep wallet systems running. He went looking for a popular AI coding tool.",
+      "data": {
+        "window": "Search",
+        "sender": "",
+        "lines": [
+          "popular AI coding tool install"
+        ],
+        "typing": true
+      },
+      "sfx": [
+        {
+          "file": "sfx/whoosh.wav",
+          "at": 0
+        },
+        {
+          "file": "sfx/typewriter.wav",
+          "at": 0.3
+        }
+      ],
+      "hud": {
+        "step": 3
+      },
+      "source": "Binance report via mlq.ai, SecurityBoulevard",
+      "imageIdea": "search bar typing"
+    },
+    {
+      "id": "tech-028-ch3-homebrew",
+      "scene": "techFeed",
+      "narration": "Through a search result, he ended up installing a tampered version of Homebrew, a tool a huge share of Mac developers use to install other software.",
+      "data": {
+        "title": "SEARCH RESULTS",
+        "items": [
+          {
+            "tag": "AD",
+            "text": "Install Homebrew in one command"
+          },
+          {
+            "tag": "RESULT",
+            "text": "AI coding tool setup guide"
+          },
+          {
+            "tag": "RESULT",
+            "text": "Homebrew documentation"
+          }
+        ]
+      },
+      "sfx": [
+        {
+          "file": "sfx/whoosh.wav",
+          "at": 0
+        },
+        {
+          "file": "sfx/pin.wav",
+          "at": 0.5
+        },
+        {
+          "file": "sfx/pin.wav",
+          "at": 0.9
+        },
+        {
+          "file": "sfx/pin.wav",
+          "at": 1.3
+        }
+      ],
+      "hud": {
+        "step": 3
+      },
+      "source": "Binance report via mlq.ai; Fortune reports an internet ad",
+      "imageIdea": "top 'ad' result glowing suspiciously"
+    },
+    {
+      "id": "tech-029-ch3-ad-risk",
+      "scene": "techSourceCheck",
+      "narration": "Fortune reports the engineer clicked an internet ad promoting a tampered version, instead of getting the software through Binance's normal channels.",
+      "data": {
+        "claim": "The engineer clicked an internet ad promoting a tampered Homebrew.",
+        "highlight": "internet ad",
+        "source": "Fortune, Nov 3 2026",
+        "detail": "Citing Binance's report",
+        "verdict": "REPORTED"
+      },
+      "sfx": [
+        {
+          "file": "sfx/whoosh.wav",
+          "at": 0
+        },
+        {
+          "file": "sfx/typewriter.wav",
+          "at": 0.3
+        },
+        {
+          "file": "sfx/stamp.wav",
+          "at": 1.6
+        }
+      ],
+      "hud": {
+        "step": 3
+      },
+      "source": "Fortune Nov 3 2026",
+      "imageIdea": "news claim card with highlighted phrase"
+    },
+    {
+      "id": "tech-030-ch3-toolbox",
+      "scene": "techHub",
+      "narration": "Think of Homebrew as a toolbox that installs other tools. Poison the toolbox, and anything installed through it can carry the attacker's code.",
+      "data": {
+        "center": "HOMEBREW",
+        "nodes": [
+          "Python",
+          "Git",
+          "Node",
+          "pyenv",
+          "CLI tools"
+        ],
+        "mode": "hub",
+        "flow": "out"
+      },
+      "sfx": [
+        {
+          "file": "sfx/whoosh.wav",
+          "at": 0
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 0.6
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 0.85
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 1.1
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 1.35
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 1.6
+        }
+      ],
+      "hud": {
+        "step": 3
+      },
+      "source": "General explainer",
+      "imageIdea": "toolbox node feeding tool icons, one turning red"
+    },
+    {
+      "id": "tech-031-ch3-caught",
+      "scene": "techChecklist",
+      "narration": "Here's the twist. Binance caught it. Its team saw unusual activity, replaced the laptop and rotated the credentials. Textbook incident response.",
+      "data": {
+        "title": "INCIDENT RESPONSE",
+        "items": [
+          "Unusual activity detected",
+          "Laptop replaced",
+          "Credentials rotated"
+        ],
+        "state": "done",
+        "stamp": "CLEARED"
+      },
+      "sfx": [
+        {
+          "file": "sfx/whoosh.wav",
+          "at": 0
+        },
+        {
+          "file": "sfx/pin.wav",
+          "at": 0.6
+        },
+        {
+          "file": "sfx/pin.wav",
+          "at": 1
+        },
+        {
+          "file": "sfx/pin.wav",
+          "at": 1.4
+        },
+        {
+          "file": "sfx/stamp.wav",
+          "at": 2.1
+        }
+      ],
+      "hud": {
+        "step": 3
+      },
+      "source": "Binance report via mlq.ai, SafeDep",
+      "imageIdea": "checklist with CLEARED stamp"
+    },
+    {
+      "id": "tech-032-ch3-map",
+      "scene": "techHub",
+      "narration": "But the attackers had already learned Engineer A's role and who else worked on Binance's wallet infrastructure. They walked away with a map.",
+      "data": {
+        "center": "ENGINEER A",
+        "nodes": [
+          "Wallet team",
+          "Engineer C",
+          "Roles",
+          "Colleagues"
+        ],
+        "mode": "orbit",
+        "flow": "in"
+      },
+      "sfx": [
+        {
+          "file": "sfx/whoosh.wav",
+          "at": 0
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 0.6
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 0.85
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 1.1
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 1.35
+        }
+      ],
+      "hud": {
+        "step": 3
+      },
+      "source": "Binance report via SafeDep, mlq.ai",
+      "imageIdea": "org-chart orbit, names blurred"
+    },
+    {
+      "id": "tech-033-ch3-clue",
+      "scene": "techVersus",
+      "narration": "That's the first clue. Cleaning a device fixes the machine, but it can't take back information that already leaked. Knowledge doesn't get rotated.",
+      "data": {
+        "left": {
+          "title": "CAN BE FIXED",
+          "items": [
+            "Infected laptop",
+            "Old passwords"
+          ]
+        },
+        "right": {
+          "title": "CAN'T BE UNDONE",
+          "items": [
+            "Who runs wallets",
+            "Who to target next"
+          ]
+        },
+        "leftTone": "good"
+      },
+      "sfx": [
+        {
+          "file": "sfx/whoosh.wav",
+          "at": 0
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 0.6
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 1
+        }
+      ],
+      "hud": {
+        "step": 3
+      },
+      "source": "Analysis based on Binance report",
+      "imageIdea": "right column red"
+    },
+    {
+      "id": "tech-034-ch3-57",
+      "scene": "techBigStat",
+      "narration": "And this wasn't a one-off. Binance says it stopped fifty-seven other suspected North Korea-linked attempts in twenty twenty-six alone.",
+      "data": {
+        "value": 57,
+        "prefix": "",
+        "suffix": "",
+        "label": "ATTEMPTS STOPPED IN 2026",
+        "sub": "Per Binance",
+        "points": [
+          "FAKE INTERVIEWS",
+          "FAKE DEV TOOLS",
+          "BAD PACKAGES",
+          "BAD EXTENSIONS"
+        ]
+      },
+      "sfx": [
+        {
+          "file": "sfx/impact.wav",
+          "at": 0,
+          "volume": 0.5
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 1.2
+        }
+      ],
+      "hud": {
+        "step": 3
+      },
+      "source": "SafeDep summary of Binance report; Fortune Nov 3",
+      "imageIdea": "big counter with shield icons"
+    },
+    {
+      "id": "tech-035-ch3-one",
+      "scene": "techStatGrid",
+      "narration": "Fifty-seven blocked. It only takes one getting through. Defenders have to be right every time. Attackers only need to be right once.",
+      "data": {
+        "tiles": [
+          {
+            "label": "BLOCKED",
+            "value": "57",
+            "trend": "up"
+          },
+          {
+            "label": "NEEDED",
+            "value": "1",
+            "trend": "flat"
+          }
+        ]
+      },
+      "sfx": [
+        {
+          "file": "sfx/whoosh.wav",
+          "at": 0
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 0.5
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 0.8
+        }
+      ],
+      "hud": {
+        "step": 3
+      },
+      "source": "Binance via Fortune/SafeDep",
+      "imageIdea": "the '1' pulsing red"
+    },
+    {
+      "id": "tech-036-ch3-rehook",
+      "scene": "techHeadline",
+      "narration": "With that map, the attackers waited. Then, in September, they went after a second engineer, and this time they offered him a job.",
+      "data": {
+        "kicker": "UP NEXT",
+        "top": "SEPTEMBER",
+        "main": "THE JOB OFFER"
+      },
+      "sfx": [
+        {
+          "file": "sfx/whoosh.wav",
+          "at": 0
+        },
+        {
+          "file": "sfx/impact.wav",
+          "at": 0.35,
+          "volume": 0.4
+        }
+      ],
+      "hud": {
+        "step": 3
+      },
+      "source": "Binance report",
+      "imageIdea": "job-offer card glitching in"
+    },
+    {
+      "id": "tech-037-ch4-title",
+      "scene": "techHeadline",
+      "narration": "Chapter four. Binance calls him Engineer B. His profile on a real job-hunting platform mentioned his experience at Binance. That made him visible.",
+      "data": {
+        "kicker": "CHAPTER 4",
+        "top": "THE JOB THAT",
+        "main": "DIDN'T EXIST"
+      },
+      "sfx": [
+        {
+          "file": "sfx/whoosh.wav",
+          "at": 0
+        },
+        {
+          "file": "sfx/impact.wav",
+          "at": 0.35,
+          "volume": 0.4
+        }
+      ],
+      "hud": {
+        "step": 4
+      },
+      "source": "Binance report via Fortune",
+      "imageIdea": "glitch title over a profile card"
+    },
+    {
+      "id": "tech-038-ch4-director",
+      "scene": "techChat",
+      "narration": "Someone posing as a project director reached out. Fortune reports the platform was LinkedIn. The pitch looked like a normal, attractive senior role.",
+      "data": {
+        "window": "Inbox",
+        "sender": "Project Director",
+        "lines": [
+          "Your Binance experience stood out.",
+          "We're hiring for our core team.",
+          "Can we set up an interview?"
+        ],
+        "typing": false
+      },
+      "sfx": [
+        {
+          "file": "sfx/whoosh.wav",
+          "at": 0
+        },
+        {
+          "file": "sfx/typewriter.wav",
+          "at": 0.3
+        }
+      ],
+      "hud": {
+        "step": 4
+      },
+      "source": "Binance report quoted in Fortune",
+      "imageIdea": "message thread, no logos"
+    },
+    {
+      "id": "tech-039-ch4-rounds",
+      "scene": "techTimeline",
+      "narration": "Round one was a video call with an HR representative. Round two was in a chat app, with someone claiming to be CEO of a company that doesn't exist.",
+      "data": {
+        "title": "HIRING PROCESS",
+        "nodes": [
+          {
+            "label": "OUTREACH",
+            "sub": "Job site"
+          },
+          {
+            "label": "ROUND 1",
+            "sub": "HR video"
+          },
+          {
+            "label": "ROUND 2",
+            "sub": "'CEO' chat"
+          },
+          {
+            "label": "TASK",
+            "sub": "Assignment"
+          }
+        ],
+        "active": 2
+      },
+      "sfx": [
+        {
+          "file": "sfx/whoosh.wav",
+          "at": 0
+        },
+        {
+          "file": "sfx/pin.wav",
+          "at": 0.5
+        },
+        {
+          "file": "sfx/pin.wav",
+          "at": 0.85
+        },
+        {
+          "file": "sfx/pin.wav",
+          "at": 1.2
+        },
+        {
+          "file": "sfx/pin.wav",
+          "at": 1.55
+        }
+      ],
+      "hud": {
+        "step": 4
+      },
+      "source": "SafeDep summary of Binance report; Fortune",
+      "imageIdea": "progress nodes with call icons"
+    },
+    {
+      "id": "tech-040-ch4-trust",
+      "scene": "techSourceCheck",
+      "narration": "To build trust, the HR representative even shared a personal social media account during the video call. A real face, a real profile, a fake company.",
+      "data": {
+        "claim": "An 'HR representative' on a video call shared a personal social media account to build trust.",
+        "highlight": "shared a personal social media account",
+        "source": "SafeDep",
+        "detail": "Citing Binance's initial report",
+        "verdict": "CONFIRMED"
+      },
+      "sfx": [
+        {
+          "file": "sfx/whoosh.wav",
+          "at": 0
+        },
+        {
+          "file": "sfx/typewriter.wav",
+          "at": 0.3
+        },
+        {
+          "file": "sfx/stamp.wav",
+          "at": 1.6
+        }
+      ],
+      "hud": {
+        "step": 4
+      },
+      "source": "SafeDep Nov 3 2026 (from Binance report)",
+      "imageIdea": "claim card, video-call tile beside it"
+    },
+    {
+      "id": "tech-041-ch4-legit",
+      "scene": "techChecklist",
+      "narration": "Every step looked real: a real platform, real conversations, a structured process. That's exactly why this trap works on smart, careful people.",
+      "data": {
+        "title": "LOOKED LEGIT",
+        "items": [
+          "Real job platform",
+          "Live video call",
+          "Senior titles",
+          "A clear process"
+        ],
+        "state": "done"
+      },
+      "sfx": [
+        {
+          "file": "sfx/whoosh.wav",
+          "at": 0
+        },
+        {
+          "file": "sfx/pin.wav",
+          "at": 0.6
+        },
+        {
+          "file": "sfx/pin.wav",
+          "at": 1
+        },
+        {
+          "file": "sfx/pin.wav",
+          "at": 1.4
+        },
+        {
+          "file": "sfx/pin.wav",
+          "at": 1.8
+        }
+      ],
+      "hud": {
+        "step": 4
+      },
+      "source": "Binance report via SafeDep",
+      "imageIdea": "checklist all green, slightly too perfect"
+    },
+    {
+      "id": "tech-042-ch4-assignment",
+      "scene": "techChat",
+      "narration": "At the end, the interviewer asked him to download an assignment repository to his work computer. Coding tests are normal in tech hiring. That's the whole point.",
+      "data": {
+        "window": "Chat",
+        "sender": "'CEO'",
+        "lines": [
+          "Great talk today!",
+          "Last step: a short take-home task.",
+          "Clone the repo and run setup."
+        ],
+        "typing": false
+      },
+      "sfx": [
+        {
+          "file": "sfx/whoosh.wav",
+          "at": 0
+        },
+        {
+          "file": "sfx/typewriter.wav",
+          "at": 0.3
+        }
+      ],
+      "hud": {
+        "step": 4
+      },
+      "source": "SafeDep / Binance report",
+      "imageIdea": "message with a repo link glowing"
+    },
+    {
+      "id": "tech-043-ch4-setup",
+      "scene": "techTerminal",
+      "narration": "The repository ran malicious code during setup. He didn't need to finish the test, or even open the code. Running setup was enough.",
+      "data": {
+        "title": "work-laptop",
+        "lines": [
+          "$ git clone assignment-repo",
+          "$ ./setup",
+          "installing dependencies ...",
+          "running post-install script ...",
+          "done"
+        ]
+      },
+      "sfx": [
+        {
+          "file": "sfx/typewriter.wav",
+          "at": 0
+        }
+      ],
+      "hud": {
+        "step": 4
+      },
+      "source": "SafeDep (repository ran malicious code during setup)",
+      "imageIdea": "terminal looking totally normal"
+    },
+    {
+      "id": "tech-044-ch4-pyenv-what",
+      "scene": "techHub",
+      "narration": "The malware went after pyenv, a common tool developers use to switch between versions of Python. It sits inside the Homebrew folder.",
+      "data": {
+        "center": "PYENV",
+        "nodes": [
+          "Python 3.11",
+          "Python 3.12",
+          "Projects",
+          "Shell"
+        ],
+        "mode": "hub",
+        "flow": "out"
+      },
+      "sfx": [
+        {
+          "file": "sfx/whoosh.wav",
+          "at": 0
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 0.6
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 0.85
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 1.1
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 1.35
+        }
+      ],
+      "hud": {
+        "step": 4
+      },
+      "source": "SafeDep (pyenv in /opt/homebrew)",
+      "imageIdea": "pyenv node routing to python versions"
+    },
+    {
+      "id": "tech-045-ch4-swap",
+      "scene": "techTerminal",
+      "narration": "Binance published the exact moves. Create a staging file, write in three thousand four hundred bytes of malicious code, delete the real pyenv, then rename the fake into its place.",
+      "data": {
+        "title": "file-events",
+        "lines": [
+          "CREATE  libexec/pyenv_",
+          "MODIFY  pyenv_  (3,414 bytes)",
+          "DELETE  libexec/pyenv  (3,344 bytes)",
+          "RENAME  pyenv_ -> pyenv",
+          "LINK    bin/pyenv  -> start zsh"
+        ]
+      },
+      "sfx": [
+        {
+          "file": "sfx/typewriter.wav",
+          "at": 0
+        }
+      ],
+      "hud": {
+        "step": 4
+      },
+      "source": "SafeDep table of Binance-published file operations",
+      "imageIdea": "file log with each line flashing"
+    },
+    {
+      "id": "tech-046-ch4-size",
+      "scene": "techBarRank",
+      "narration": "Look at the sizes. The real file was three thousand three hundred forty-four bytes. The fake was just seventy bytes bigger. Nobody would notice.",
+      "data": {
+        "title": "REAL VS FAKE PYENV",
+        "unit": "bytes",
+        "items": [
+          {
+            "label": "Real pyenv",
+            "value": 3344
+          },
+          {
+            "label": "Fake pyenv",
+            "value": 3414,
+            "highlight": true
+          }
+        ]
+      },
+      "sfx": [
+        {
+          "file": "sfx/whoosh.wav",
+          "at": 0
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 0.7
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 1
+        }
+      ],
+      "hud": {
+        "step": 4
+      },
+      "source": "SafeDep; calc 3414-3344 = 70 bytes",
+      "imageIdea": "two almost-equal bars"
+    },
+    {
+      "id": "tech-047-ch4-no-password",
+      "scene": "techSourceCheck",
+      "narration": "And here's a clue few people know. On Macs, the logged-in user owns the Homebrew folder, so malware can replace tools there without any password prompt.",
+      "data": {
+        "claim": "The logged-in user owns /opt/homebrew, so malware can replace tools there without a password prompt.",
+        "highlight": "without a password prompt",
+        "source": "SafeDep",
+        "detail": "Analysis of Binance report",
+        "verdict": "CONFIRMED"
+      },
+      "sfx": [
+        {
+          "file": "sfx/whoosh.wav",
+          "at": 0
+        },
+        {
+          "file": "sfx/typewriter.wav",
+          "at": 0.3
+        },
+        {
+          "file": "sfx/stamp.wav",
+          "at": 1.6
+        }
+      ],
+      "hud": {
+        "step": 4
+      },
+      "source": "SafeDep Nov 3 2026",
+      "imageIdea": "folder icon with an open padlock"
+    },
+    {
+      "id": "tech-048-ch4-undetected",
+      "scene": "techChecklist",
+      "narration": "The fake pyenv ran commands and connected to an attacker server. Binance says its endpoint security tools did not detect it.",
+      "data": {
+        "title": "WHAT THE MALWARE DID",
+        "items": [
+          "Replaced pyenv",
+          "Opened a shell",
+          "Ran commands",
+          "Called attacker server",
+          "Not detected"
+        ],
+        "state": "fail"
+      },
+      "sfx": [
+        {
+          "file": "sfx/whoosh.wav",
+          "at": 0
+        },
+        {
+          "file": "sfx/pin.wav",
+          "at": 0.6
+        },
+        {
+          "file": "sfx/pin.wav",
+          "at": 1
+        },
+        {
+          "file": "sfx/pin.wav",
+          "at": 1.4
+        },
+        {
+          "file": "sfx/pin.wav",
+          "at": 1.8
+        },
+        {
+          "file": "sfx/pin.wav",
+          "at": 2.2
+        }
+      ],
+      "hud": {
+        "step": 4
+      },
+      "source": "SafeDep; ComplyAdvantage (endpoint tools didn't detect)",
+      "imageIdea": "checklist turning red line by line"
+    },
+    {
+      "id": "tech-049-ch4-pattern",
+      "scene": "techBigStat",
+      "narration": "This trick is widespread. In September, agencies from the US, Japan, Australia and Germany warned that one fake-interview group had infected about thirty thousand devices.",
+      "data": {
+        "value": 30000,
+        "prefix": "",
+        "suffix": "",
+        "label": "DEVICES INFECTED",
+        "sub": "One fake-interview group, joint warning",
+        "points": [
+          "US",
+          "JAPAN",
+          "AUSTRALIA",
+          "GERMANY"
+        ]
+      },
+      "sfx": [
+        {
+          "file": "sfx/impact.wav",
+          "at": 0,
+          "volume": 0.5
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 1.2
+        }
+      ],
+      "hud": {
+        "step": 4
+      },
+      "source": "Tom's Hardware / IBTimes on WaterPlum advisory (Sep 2026); VERIFY",
+      "imageIdea": "big counter with country tags"
+    },
+    {
+      "id": "tech-050-ch4-policy",
+      "scene": "techFeed",
+      "narration": "One more detail. A Binance spokesperson said employees in non-public roles aren't allowed to keep LinkedIn profiles. The company wouldn't say whether that rule was broken.",
+      "data": {
+        "title": "COMPANY POLICY",
+        "items": [
+          {
+            "tag": "RULE",
+            "text": "Non-public staff: no LinkedIn profile"
+          },
+          {
+            "tag": "QUESTION",
+            "text": "Was the rule broken?"
+          },
+          {
+            "tag": "ANSWER",
+            "text": "Binance declined to say"
+          }
+        ]
+      },
+      "sfx": [
+        {
+          "file": "sfx/whoosh.wav",
+          "at": 0
+        },
+        {
+          "file": "sfx/pin.wav",
+          "at": 0.5
+        },
+        {
+          "file": "sfx/pin.wav",
+          "at": 0.9
+        },
+        {
+          "file": "sfx/pin.wav",
+          "at": 1.3
+        }
+      ],
+      "hud": {
+        "step": 4
+      },
+      "source": "Fortune Nov 3 2026",
+      "imageIdea": "policy cards stacking"
+    },
+    {
+      "id": "tech-051-ch4-rehook",
+      "scene": "techHeadline",
+      "narration": "Now the attackers were inside a Binance work laptop. But Engineer B didn't hold the keys to the wallets. They needed to move sideways.",
+      "data": {
+        "kicker": "UP NEXT",
+        "top": "INSIDE, BUT",
+        "main": "NOT THE KEYS"
+      },
+      "sfx": [
+        {
+          "file": "sfx/whoosh.wav",
+          "at": 0
+        },
+        {
+          "file": "sfx/impact.wav",
+          "at": 0.35,
+          "volume": 0.4
+        }
+      ],
+      "hud": {
+        "step": 4
+      },
+      "source": "Binance report",
+      "imageIdea": "locked vault flickering"
+    },
+    {
+      "id": "tech-052-ch5-title",
+      "scene": "techHeadline",
+      "narration": "Chapter five. October twentieth, nine days before the heist. This is the part that has security researchers most worried.",
+      "data": {
+        "kicker": "CHAPTER 5",
+        "top": "OCTOBER 20",
+        "main": "THE AI PIVOT"
+      },
+      "sfx": [
+        {
+          "file": "sfx/whoosh.wav",
+          "at": 0
+        },
+        {
+          "file": "sfx/impact.wav",
+          "at": 0.35,
+          "volume": 0.4
+        }
+      ],
+      "hud": {
+        "step": 5
+      },
+      "source": "Binance report",
+      "imageIdea": "glitch title with AI sparkle"
+    },
+    {
+      "id": "tech-053-ch5-ai",
+      "scene": "techHub",
+      "narration": "Using Engineer B's computer and one of Binance's own internal AI tools, the attackers took control of two wallet engineers' machines: Engineer A again, and a new one, Engineer C.",
+      "data": {
+        "center": "INTERNAL AI",
+        "nodes": [
+          "Engineer B",
+          "Engineer A",
+          "Engineer C"
+        ],
+        "mode": "hub",
+        "flow": "out"
+      },
+      "sfx": [
+        {
+          "file": "sfx/whoosh.wav",
+          "at": 0
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 0.6
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 0.85
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 1.1
+        }
+      ],
+      "hud": {
+        "step": 5
+      },
+      "source": "Binance report quoted in Fortune",
+      "imageIdea": "AI node reaching three laptops"
+    },
+    {
+      "id": "tech-054-ch5-same-a",
+      "scene": "techSourceCheck",
+      "narration": "Yes, Engineer A, from June. His old laptop was cleaned, but the attackers already knew he mattered. So they came back for his new one.",
+      "data": {
+        "claim": "The attackers took over two wallet engineers' machines, including the one targeted in June.",
+        "highlight": "including the one targeted in June",
+        "source": "ComplyAdvantage",
+        "detail": "Citing Binance's report",
+        "verdict": "CONFIRMED"
+      },
+      "sfx": [
+        {
+          "file": "sfx/whoosh.wav",
+          "at": 0
+        },
+        {
+          "file": "sfx/typewriter.wav",
+          "at": 0.3
+        },
+        {
+          "file": "sfx/stamp.wav",
+          "at": 1.6
+        }
+      ],
+      "hud": {
+        "step": 5
+      },
+      "source": "ComplyAdvantage (citing Binance)",
+      "imageIdea": "June node reappearing"
+    },
+    {
+      "id": "tech-055-ch5-token",
+      "scene": "techTerminal",
+      "narration": "On Engineer A's computer they found the prize: a container deployment permission token, a pass that lets you launch software inside company systems.",
+      "data": {
+        "title": "engineer-a",
+        "lines": [
+          "$ scanning home directory ...",
+          "found: deploy_token",
+          "scope: container deployment",
+          "status: VALID"
+        ]
+      },
+      "sfx": [
+        {
+          "file": "sfx/typewriter.wav",
+          "at": 0
+        }
+      ],
+      "hud": {
+        "step": 5
+      },
+      "source": "Binance report quoted in Fortune",
+      "imageIdea": "token highlighted in neon"
+    },
+    {
+      "id": "tech-056-ch5-why-token",
+      "scene": "techChecklist",
+      "narration": "Why does that matter? A container is a small package of software. With that token, they could start their own code inside Binance's network, close to the signing service.",
+      "data": {
+        "title": "WHAT THE TOKEN ALLOWED",
+        "items": [
+          "Launch containers",
+          "Run code inside network",
+          "Reach internal services"
+        ],
+        "state": "fail"
+      },
+      "sfx": [
+        {
+          "file": "sfx/whoosh.wav",
+          "at": 0
+        },
+        {
+          "file": "sfx/pin.wav",
+          "at": 0.6
+        },
+        {
+          "file": "sfx/pin.wav",
+          "at": 1
+        },
+        {
+          "file": "sfx/pin.wav",
+          "at": 1.4
+        }
+      ],
+      "hud": {
+        "step": 5
+      },
+      "source": "Binance report via SafeDep (container deployed with Engineer A's token)",
+      "imageIdea": "checklist turning red"
+    },
+    {
+      "id": "tech-057-ch5-gap",
+      "scene": "techFeed",
+      "narration": "Here's the big unanswered question. Binance hasn't explained how an internal AI tool gave control over other employees' computers. Analysts call it the report's most important gap.",
+      "data": {
+        "title": "OPEN QUESTIONS",
+        "items": [
+          {
+            "tag": "HOW",
+            "text": "How did the AI tool grant control?"
+          },
+          {
+            "tag": "WHY",
+            "text": "Why did it have that reach?"
+          },
+          {
+            "tag": "STATUS",
+            "text": "Not yet explained"
+          }
+        ]
+      },
+      "sfx": [
+        {
+          "file": "sfx/whoosh.wav",
+          "at": 0
+        },
+        {
+          "file": "sfx/pin.wav",
+          "at": 0.5
+        },
+        {
+          "file": "sfx/pin.wav",
+          "at": 0.9
+        },
+        {
+          "file": "sfx/pin.wav",
+          "at": 1.3
+        }
+      ],
+      "hud": {
+        "step": 5
+      },
+      "source": "SecurityBoulevard; SafeDep (Binance doesn't say how)",
+      "imageIdea": "question cards pulsing amber"
+    },
+    {
+      "id": "tech-058-ch5-not-ai-hack",
+      "scene": "techVersus",
+      "narration": "Notice what AI did and didn't do. It didn't break in. Old-school tricks did that. AI was the shortcut once they were already inside.",
+      "data": {
+        "left": {
+          "title": "GOT THEM IN",
+          "items": [
+            "Tampered download",
+            "Fake job interview"
+          ]
+        },
+        "right": {
+          "title": "MOVED THEM AROUND",
+          "items": [
+            "Internal AI tool",
+            "Stolen token"
+          ]
+        },
+        "leftTone": "bad"
+      },
+      "sfx": [
+        {
+          "file": "sfx/whoosh.wav",
+          "at": 0
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 0.6
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 1
+        }
+      ],
+      "hud": {
+        "step": 5
+      },
+      "source": "Fortune: mainly conventional phishing; AI used after access",
+      "imageIdea": "two columns linked by arrows"
+    },
+    {
+      "id": "tech-059-ch5-count",
+      "scene": "techStatGrid",
+      "narration": "Where they stood now: three engineers' machines compromised, a deployment token in hand, and nine days to prepare.",
+      "data": {
+        "tiles": [
+          {
+            "label": "MACHINES",
+            "value": "3",
+            "trend": "up"
+          },
+          {
+            "label": "TOKENS",
+            "value": "1",
+            "trend": "up"
+          },
+          {
+            "label": "DAYS LEFT",
+            "value": "9",
+            "trend": "down"
+          }
+        ]
+      },
+      "sfx": [
+        {
+          "file": "sfx/whoosh.wav",
+          "at": 0
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 0.5
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 0.8
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 1.1
+        }
+      ],
+      "hud": {
+        "step": 5
+      },
+      "source": "Binance report timeline (Oct 20 to Oct 29)",
+      "imageIdea": "countdown tiles"
+    },
+    {
+      "id": "tech-060-ch5-rehook",
+      "scene": "techHeadline",
+      "narration": "On October twenty-ninth they used everything at once. Let's slow it down and walk through the heist minute by minute.",
+      "data": {
+        "kicker": "UP NEXT",
+        "top": "MINUTE BY MINUTE",
+        "main": "THE HEIST"
+      },
+      "sfx": [
+        {
+          "file": "sfx/whoosh.wav",
+          "at": 0
+        },
+        {
+          "file": "sfx/impact.wav",
+          "at": 0.35,
+          "volume": 0.4
+        }
+      ],
+      "hud": {
+        "step": 5
+      },
+      "source": "none",
+      "imageIdea": "clock spinning fast"
+    },
+    {
+      "id": "tech-061-ch6-title",
+      "scene": "techHeadline",
+      "narration": "Chapter six. October twenty-ninth. All times are in UTC. The setup that day started almost three hours before the first coin moved.",
+      "data": {
+        "kicker": "CHAPTER 6",
+        "top": "OCTOBER 29",
+        "main": "THE HEIST"
+      },
+      "sfx": [
+        {
+          "file": "sfx/whoosh.wav",
+          "at": 0
+        },
+        {
+          "file": "sfx/impact.wav",
+          "at": 0.35,
+          "volume": 0.4
+        }
+      ],
+      "hud": {
+        "step": 6
+      },
+      "source": "SafeDep timeline; calc 17:15 to 20:05 = 2h50m",
+      "imageIdea": "red alert lighting"
+    },
+    {
+      "id": "tech-062-ch6-timeline",
+      "scene": "techTimeline",
+      "narration": "Here's the full timeline. Container at seventeen fifteen. Money out at twenty oh five. Last transfer at twenty-three fifty-six. Permission removed at ten past midnight.",
+      "data": {
+        "title": "OCTOBER 29-30 (UTC)",
+        "nodes": [
+          {
+            "label": "17:15",
+            "sub": "Container"
+          },
+          {
+            "label": "20:05",
+            "sub": "Funds leave"
+          },
+          {
+            "label": "23:56",
+            "sub": "Last move"
+          },
+          {
+            "label": "00:10",
+            "sub": "Revoked"
+          }
+        ],
+        "active": 0
+      },
+      "sfx": [
+        {
+          "file": "sfx/whoosh.wav",
+          "at": 0
+        },
+        {
+          "file": "sfx/pin.wav",
+          "at": 0.5
+        },
+        {
+          "file": "sfx/pin.wav",
+          "at": 0.85
+        },
+        {
+          "file": "sfx/pin.wav",
+          "at": 1.2
+        },
+        {
+          "file": "sfx/pin.wav",
+          "at": 1.55
+        }
+      ],
+      "hud": {
+        "step": 6
+      },
+      "source": "SafeDep timeline from Binance report",
+      "imageIdea": "timeline, first node blinking"
+    },
+    {
+      "id": "tech-063-ch6-container",
+      "scene": "techTerminal",
+      "narration": "At seventeen fifteen, the attacker logged on to Engineer C's computer, used Engineer A's token, deployed a container and ran a malicious script.",
+      "data": {
+        "title": "engineer-c",
+        "lines": [
+          "17:15 session: engineer-c",
+          "auth: token(engineer-a)",
+          "deploy container ... OK",
+          "run script.sh ..."
+        ]
+      },
+      "sfx": [
+        {
+          "file": "sfx/typewriter.wav",
+          "at": 0
+        }
+      ],
+      "hud": {
+        "step": 6
+      },
+      "source": "SafeDep; Breach Ledger (17:15-19:56 access)",
+      "imageIdea": "terminal typing, red cursor"
+    },
+    {
+      "id": "tech-064-ch6-reach",
+      "scene": "techHub",
+      "narration": "That script reached Binance's internal wallet signing service. Remember the lesson: the key was safe, but the path to the signer was now open.",
+      "data": {
+        "center": "SIGNING SERVICE",
+        "nodes": [
+          "Container",
+          "Script",
+          "Hot wallets",
+          "Approvals"
+        ],
+        "mode": "hub",
+        "flow": "in"
+      },
+      "sfx": [
+        {
+          "file": "sfx/whoosh.wav",
+          "at": 0
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 0.6
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 0.85
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 1.1
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 1.35
+        }
+      ],
+      "hud": {
+        "step": 6
+      },
+      "source": "Binance report via Breach Ledger, mlq.ai",
+      "imageIdea": "signing node turning red"
+    },
+    {
+      "id": "tech-065-ch6-two-moves",
+      "scene": "techVersus",
+      "narration": "Through the signer, they did two things at once. They sent transfers outside the normal withdrawal process, and they set a trap on Ethereum.",
+      "data": {
+        "left": {
+          "title": "MOVE 1",
+          "items": [
+            "Direct transfers",
+            "Skip normal checks"
+          ]
+        },
+        "right": {
+          "title": "MOVE 2",
+          "items": [
+            "Ethereum delegation",
+            "A hidden backdoor"
+          ]
+        },
+        "leftTone": "bad"
+      },
+      "sfx": [
+        {
+          "file": "sfx/whoosh.wav",
+          "at": 0
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 0.6
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 1
+        }
+      ],
+      "hud": {
+        "step": 6
+      },
+      "source": "SafeDep (transactions outside normal withdrawal process + 50 EIP-7702 signatures)",
+      "imageIdea": "two red panels"
+    },
+    {
+      "id": "tech-066-ch6-7702",
+      "scene": "techChecklist",
+      "narration": "The trap used EIP seven seven oh two, an Ethereum feature added in twenty twenty-five. It lets a normal wallet hand control to a smart contract's code.",
+      "data": {
+        "title": "EIP-7702 IN PLAIN WORDS",
+        "items": [
+          "Wallet signs a permission",
+          "Code gets wallet powers",
+          "Code acts on its own",
+          "Stays until revoked"
+        ],
+        "state": "progress"
+      },
+      "sfx": [
+        {
+          "file": "sfx/whoosh.wav",
+          "at": 0
+        },
+        {
+          "file": "sfx/pin.wav",
+          "at": 0.6
+        },
+        {
+          "file": "sfx/pin.wav",
+          "at": 1
+        },
+        {
+          "file": "sfx/pin.wav",
+          "at": 1.4
+        },
+        {
+          "file": "sfx/pin.wav",
+          "at": 1.8
+        }
+      ],
+      "hud": {
+        "step": 6
+      },
+      "source": "EIP-7702 via Ethereum Pectra upgrade (2025; VERIFY date); SafeDep",
+      "imageIdea": "checklist with last item spinning"
+    },
+    {
+      "id": "tech-067-ch6-fifty",
+      "scene": "techBigStat",
+      "narration": "But a permission only works if it matches the wallet's next transaction number, called a nonce. So they signed fifty, each with a different number.",
+      "data": {
+        "value": 50,
+        "prefix": "",
+        "suffix": "",
+        "label": "SIGNED AUTHORIZATIONS",
+        "sub": "Each with a different nonce",
+        "points": [
+          "49 MISSES",
+          "1 HIT"
+        ]
+      },
+      "sfx": [
+        {
+          "file": "sfx/impact.wav",
+          "at": 0,
+          "volume": 0.5
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 1.2
+        }
+      ],
+      "hud": {
+        "step": 6
+      },
+      "source": "SafeDep; Breach Ledger (50-nonce spray); ComplyAdvantage",
+      "imageIdea": "fifty tiny keys, one glowing"
+    },
+    {
+      "id": "tech-068-ch6-why-fifty",
+      "scene": "techFeed",
+      "narration": "Why fifty? A busy exchange wallet keeps sending transactions, so its next number keeps changing. Signing a spread of numbers made sure one would still fit.",
+      "data": {
+        "title": "MOVING TARGET",
+        "items": [
+          {
+            "tag": "PROBLEM",
+            "text": "Nonce changes with every transaction"
+          },
+          {
+            "tag": "SOLUTION",
+            "text": "Sign 50 different nonces"
+          },
+          {
+            "tag": "RESULT",
+            "text": "One still matched"
+          }
+        ]
+      },
+      "sfx": [
+        {
+          "file": "sfx/whoosh.wav",
+          "at": 0
+        },
+        {
+          "file": "sfx/pin.wav",
+          "at": 0.5
+        },
+        {
+          "file": "sfx/pin.wav",
+          "at": 0.9
+        },
+        {
+          "file": "sfx/pin.wav",
+          "at": 1.3
+        }
+      ],
+      "hud": {
+        "step": 6
+      },
+      "source": "Analysis; Breach Ledger describes a 50-nonce spray hitting one live nonce",
+      "imageIdea": "number counter ticking while keys fan out"
+    },
+    {
+      "id": "tech-069-ch6-nonce",
+      "scene": "techSourceCheck",
+      "narration": "Think of fifty keys for a lock whose shape changes after every use. Carry every likely shape, and one will fit. One did, and the wallet became a sweeper.",
+      "data": {
+        "claim": "One authorization matched the hot wallet's nonce and turned it into a sweeper.",
+        "highlight": "turned it into a sweeper",
+        "source": "ComplyAdvantage",
+        "detail": "Nonce = next transaction number",
+        "verdict": "CONFIRMED"
+      },
+      "sfx": [
+        {
+          "file": "sfx/whoosh.wav",
+          "at": 0
+        },
+        {
+          "file": "sfx/typewriter.wav",
+          "at": 0.3
+        },
+        {
+          "file": "sfx/stamp.wav",
+          "at": 1.6
+        }
+      ],
+      "hud": {
+        "step": 6
+      },
+      "source": "ComplyAdvantage",
+      "imageIdea": "key ring, one key turns"
+    },
+    {
+      "id": "tech-070-ch6-one-tx",
+      "scene": "techTerminal",
+      "narration": "Security firm SecurityHQ says a single Ethereum transaction carried all fifty authorizations, each pointing the hot wallet at the attacker's sweeper contract.",
+      "data": {
+        "title": "ethereum-tx",
+        "lines": [
+          "tx: 1 transaction",
+          "authorizations: 50",
+          "target: sweeper contract",
+          "match: 1 of 50",
+          "wallet: DELEGATED"
+        ]
+      },
+      "sfx": [
+        {
+          "file": "sfx/typewriter.wav",
+          "at": 0
+        }
+      ],
+      "hud": {
+        "step": 6
+      },
+      "source": "SecurityHQ (single transaction, 50 authorizations)",
+      "imageIdea": "transaction inspector, one row lighting green"
+    },
+    {
+      "id": "tech-071-ch6-sweep",
+      "scene": "techStatGrid",
+      "narration": "About three and a half minutes later, that Ethereum hot wallet was empty, including about one hundred sixty-seven thousand ETH and one point six billion USDT.",
+      "data": {
+        "tiles": [
+          {
+            "label": "TIME TO EMPTY",
+            "value": "~3.5 min",
+            "trend": "down"
+          },
+          {
+            "label": "ETH",
+            "value": "167,464",
+            "trend": "down"
+          },
+          {
+            "label": "USDT",
+            "value": "1.615B",
+            "trend": "down"
+          }
+        ]
+      },
+      "sfx": [
+        {
+          "file": "sfx/whoosh.wav",
+          "at": 0
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 0.5
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 0.8
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 1.1
+        }
+      ],
+      "hud": {
+        "step": 6
+      },
+      "source": "ComplyAdvantage (citing Binance)",
+      "imageIdea": "tiles counting down"
+    },
+    {
+      "id": "tech-072-ch6-chains",
+      "scene": "techTerminal",
+      "narration": "Other chains were hit in parallel. Analysts list about two hundred thirty-three million XRP, nearly a million SOL, forty-four million OP, and eighteen thousand bitcoin.",
+      "data": {
+        "title": "multi-chain",
+        "lines": [
+          "XRP  233,460,000  OUT",
+          "SOL  ~970,500  OUT",
+          "OP   44,200,000  OUT",
+          "BTC  18,270  OUT"
+        ]
+      },
+      "sfx": [
+        {
+          "file": "sfx/typewriter.wav",
+          "at": 0
+        }
+      ],
+      "hud": {
+        "step": 6
+      },
+      "source": "SecurityBoulevard analysis of Binance report; VERIFY amounts",
+      "imageIdea": "four chain logs firing"
+    },
+    {
+      "id": "tech-073-ch6-xrp-speed",
+      "scene": "techBigStat",
+      "narration": "The XRP part alone left five hot wallets in about four minutes, between twenty oh five and twenty oh nine. This was rehearsed, not improvised.",
+      "data": {
+        "value": 4,
+        "prefix": "",
+        "suffix": "min",
+        "label": "TO DRAIN 5 XRP WALLETS",
+        "sub": "20:05 to 20:09 UTC",
+        "points": []
+      },
+      "sfx": [
+        {
+          "file": "sfx/impact.wav",
+          "at": 0,
+          "volume": 0.5
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 1.2
+        }
+      ],
+      "hud": {
+        "step": 6
+      },
+      "source": "SecurityBoulevard (20:05-20:09, five hot wallets)",
+      "imageIdea": "stopwatch hitting 4:00"
+    },
+    {
+      "id": "tech-074-ch6-pause",
+      "scene": "techPhone",
+      "narration": "Binance spotted it and suspended withdrawals. For customers, the app simply stopped letting money out. Inside, a race had started.",
+      "data": {
+        "app": "Exchange",
+        "screenTitle": "Withdrawals",
+        "value": "Suspended",
+        "rows": [
+          "Unusual activity detected",
+          "Deposits still visible",
+          "Updates to follow"
+        ],
+        "banner": "Withdrawals suspended"
+      },
+      "sfx": [
+        {
+          "file": "sfx/whoosh.wav",
+          "at": 0
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 1
+        }
+      ],
+      "hud": {
+        "step": 6
+      },
+      "source": "Binance suspended withdrawals (SafeDep; Fortune)",
+      "imageIdea": "phone with red suspended banner, generic app"
+    },
+    {
+      "id": "tech-075-ch6-offswitch",
+      "scene": "techVersus",
+      "narration": "But the off switch didn't reach the blockchain. The delegation lived on-chain, so pausing withdrawals inside Binance couldn't cancel it. Funds kept moving.",
+      "data": {
+        "left": {
+          "title": "BINANCE SWITCH",
+          "items": [
+            "Withdrawals paused",
+            "Internal alarms on"
+          ]
+        },
+        "right": {
+          "title": "ON-CHAIN TRAP",
+          "items": [
+            "Delegation active",
+            "Kept draining"
+          ]
+        },
+        "leftTone": "good"
+      },
+      "sfx": [
+        {
+          "file": "sfx/whoosh.wav",
+          "at": 0
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 0.6
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 1
+        }
+      ],
+      "hud": {
+        "step": 6
+      },
+      "source": "SafeDep (delegation stayed active on-chain after withdrawals stopped)",
+      "imageIdea": "switch off, chain still glowing"
+    },
+    {
+      "id": "tech-076-ch6-mpc-trap",
+      "scene": "techHub",
+      "narration": "To cancel it, Binance had to sign a revoke from that wallet. But with MPC, there's no single key to sign quickly. The protection became a speed bump.",
+      "data": {
+        "center": "REVOKE?",
+        "nodes": [
+          "Share 1",
+          "Share 2",
+          "Share 3",
+          "Time"
+        ],
+        "mode": "orbit",
+        "flow": "in"
+      },
+      "sfx": [
+        {
+          "file": "sfx/whoosh.wav",
+          "at": 0
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 0.6
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 0.85
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 1.1
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 1.35
+        }
+      ],
+      "hud": {
+        "step": 6
+      },
+      "source": "SafeDep (MPC: no single private key for fast revocation)",
+      "imageIdea": "shards orbiting slowly, clock ticking"
+    },
+    {
+      "id": "tech-077-ch6-irony",
+      "scene": "techSourceCheck",
+      "narration": "That's the cruel irony. The split-key design that blocks a lone thief also slowed down the emergency fix.",
+      "data": {
+        "claim": "The hot wallet uses MPC, so Binance had no single private key to sign a fast revocation.",
+        "highlight": "no single private key",
+        "source": "SafeDep",
+        "detail": "From Binance's initial report",
+        "verdict": "CONFIRMED"
+      },
+      "sfx": [
+        {
+          "file": "sfx/whoosh.wav",
+          "at": 0
+        },
+        {
+          "file": "sfx/typewriter.wav",
+          "at": 0.3
+        },
+        {
+          "file": "sfx/stamp.wav",
+          "at": 1.6
+        }
+      ],
+      "hud": {
+        "step": 6
+      },
+      "source": "SafeDep Nov 3 2026",
+      "imageIdea": "claim card with clock"
+    },
+    {
+      "id": "tech-078-ch6-hours",
+      "scene": "techBarRank",
+      "narration": "The last unauthorized transfer, about three thousand ETH, left at twenty-three fifty-six. The delegation was cleared at ten past midnight. Nearly four hours of draining.",
+      "data": {
+        "title": "OCT 29-30, IN HOURS",
+        "unit": "hours",
+        "items": [
+          {
+            "label": "Setup",
+            "value": 2.83
+          },
+          {
+            "label": "Draining",
+            "value": 3.85,
+            "highlight": true
+          },
+          {
+            "label": "To revoke",
+            "value": 0.23
+          }
+        ]
+      },
+      "sfx": [
+        {
+          "file": "sfx/whoosh.wav",
+          "at": 0
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 0.7
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 1
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 1.3
+        }
+      ],
+      "hud": {
+        "step": 6
+      },
+      "source": "SafeDep timeline (last transfer 2,961.9 ETH at 23:56; cleared 00:10); calc durations",
+      "imageIdea": "three bars, draining highlighted"
+    },
+    {
+      "id": "tech-079-ch6-rehook",
+      "scene": "techHeadline",
+      "narration": "Six point three billion was out the door. But stolen crypto isn't spendable money yet. Now the chase began.",
+      "data": {
+        "kicker": "UP NEXT",
+        "top": "NOW THE CHASE",
+        "main": "FOLLOW IT"
+      },
+      "sfx": [
+        {
+          "file": "sfx/whoosh.wav",
+          "at": 0
+        },
+        {
+          "file": "sfx/impact.wav",
+          "at": 0.35,
+          "volume": 0.4
+        }
+      ],
+      "hud": {
+        "step": 6
+      },
+      "source": "none",
+      "imageIdea": "money trail lines branching"
+    },
+    {
+      "id": "tech-080-ch7-title",
+      "scene": "techHeadline",
+      "narration": "Chapter seven. Unlike a bank robbery, every crypto transfer leaves a public trail. So the race started the moment the money left.",
+      "data": {
+        "kicker": "CHAPTER 7",
+        "top": "FOLLOW",
+        "main": "THE MONEY"
+      },
+      "sfx": [
+        {
+          "file": "sfx/whoosh.wav",
+          "at": 0
+        },
+        {
+          "file": "sfx/impact.wav",
+          "at": 0.35,
+          "volume": 0.4
+        }
+      ],
+      "hud": {
+        "step": 7
+      },
+      "source": "General explainer",
+      "imageIdea": "glitch title over blockchain graph"
+    },
+    {
+      "id": "tech-081-ch7-frozen",
+      "scene": "techBigStat",
+      "narration": "Binance says partners froze or intercepted about two point eight five billion. Stablecoin issuers like Tether and Circle can freeze their own tokens, and they did.",
+      "data": {
+        "value": 2.85,
+        "prefix": "$",
+        "suffix": "B",
+        "label": "FROZEN OR INTERCEPTED",
+        "sub": "About 45% of the total",
+        "points": [
+          "TETHER",
+          "CIRCLE",
+          "PARTNERS"
+        ]
+      },
+      "sfx": [
+        {
+          "file": "sfx/impact.wav",
+          "at": 0,
+          "volume": 0.5
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 1.2
+        }
+      ],
+      "hud": {
+        "step": 7
+      },
+      "source": "SafeDep (citing Binance: $2.85B); Fortune ~$2.5B via Tether & Circle — VERIFY",
+      "imageIdea": "frost over a big number"
+    },
+    {
+      "id": "tech-082-ch7-freeze-clue",
+      "scene": "techVersus",
+      "narration": "Another clue most people miss. Stablecoins look like crypto, but their issuers can freeze them. Bitcoin and ether can't be frozen like that.",
+      "data": {
+        "left": {
+          "title": "CAN BE FROZEN",
+          "items": [
+            "USDT",
+            "USDC"
+          ]
+        },
+        "right": {
+          "title": "CAN'T BE FROZEN",
+          "items": [
+            "Bitcoin",
+            "Ether"
+          ]
+        },
+        "leftTone": "good"
+      },
+      "sfx": [
+        {
+          "file": "sfx/whoosh.wav",
+          "at": 0
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 0.6
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 1
+        }
+      ],
+      "hud": {
+        "step": 7
+      },
+      "source": "General explainer; issuer freeze capability",
+      "imageIdea": "ice versus fire panels"
+    },
+    {
+      "id": "tech-083-ch7-laundering",
+      "scene": "techTimeline",
+      "narration": "The rest is being laundered. Chainalysis tracked more than five hundred million moved through wallets on Tron, then a new phase on Solana.",
+      "data": {
+        "title": "LAUNDERING PATH",
+        "nodes": [
+          {
+            "label": "BINANCE",
+            "sub": "Stolen"
+          },
+          {
+            "label": "TRON",
+            "sub": "$500M+"
+          },
+          {
+            "label": "SOLANA",
+            "sub": "Next phase"
+          },
+          {
+            "label": "NEAR",
+            "sub": "Meme coins"
+          }
+        ],
+        "active": 2
+      },
+      "sfx": [
+        {
+          "file": "sfx/whoosh.wav",
+          "at": 0
+        },
+        {
+          "file": "sfx/pin.wav",
+          "at": 0.5
+        },
+        {
+          "file": "sfx/pin.wav",
+          "at": 0.85
+        },
+        {
+          "file": "sfx/pin.wav",
+          "at": 1.2
+        },
+        {
+          "file": "sfx/pin.wav",
+          "at": 1.55
+        }
+      ],
+      "hud": {
+        "step": 7
+      },
+      "source": "CNBC Nov 3 2026 (Chainalysis)",
+      "imageIdea": "path hopping between chain nodes"
+    },
+    {
+      "id": "tech-084-ch7-memecoins",
+      "scene": "techFeed",
+      "narration": "Elliptic spotted something stranger: they created throwaway meme coins on NEAR and traded them between their own wallets, so stolen coins look like trading profit.",
+      "data": {
+        "title": "ELLIPTIC FINDINGS",
+        "items": [
+          {
+            "tag": "TOKENS",
+            "text": "At least 6 meme coins created"
+          },
+          {
+            "tag": "COST",
+            "text": "About $90 each to launch"
+          },
+          {
+            "tag": "MOVED",
+            "text": "About $430K so far"
+          }
+        ]
+      },
+      "sfx": [
+        {
+          "file": "sfx/whoosh.wav",
+          "at": 0
+        },
+        {
+          "file": "sfx/pin.wav",
+          "at": 0.5
+        },
+        {
+          "file": "sfx/pin.wav",
+          "at": 0.9
+        },
+        {
+          "file": "sfx/pin.wav",
+          "at": 1.3
+        }
+      ],
+      "hud": {
+        "step": 7
+      },
+      "source": "BigGo Finance table citing Elliptic; Mezha",
+      "imageIdea": "alert cards"
+    },
+    {
+      "id": "tech-085-ch7-tiny",
+      "scene": "techBigStat",
+      "narration": "Keep it in proportion. Four hundred thirty thousand dollars is less than one hundredth of one percent of the haul. This will take a long time.",
+      "data": {
+        "value": 0.007,
+        "prefix": "",
+        "suffix": "%",
+        "label": "OF HAUL LAUNDERED THIS WAY",
+        "sub": "$430K of $6.3B",
+        "points": []
+      },
+      "sfx": [
+        {
+          "file": "sfx/impact.wav",
+          "at": 0,
+          "volume": 0.5
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 1.2
+        }
+      ],
+      "hud": {
+        "step": 7
+      },
+      "source": "Calc 430e3/6.3e9 = 0.0068%",
+      "imageIdea": "tiny sliver on a giant ring"
+    },
+    {
+      "id": "tech-086-ch7-45days",
+      "scene": "techSourceCheck",
+      "narration": "Chainalysis says North Korea's laundering usually unfolds in stages over roughly forty-five days: fast at first, then slowly blending into the wider crypto world.",
+      "data": {
+        "claim": "Laundering typically unfolds in stages over roughly 45 days after a major theft.",
+        "highlight": "roughly 45 days",
+        "source": "Chainalysis",
+        "detail": "Via Korea Herald / ANN, Dec 2025",
+        "verdict": "PATTERN"
+      },
+      "sfx": [
+        {
+          "file": "sfx/whoosh.wav",
+          "at": 0
+        },
+        {
+          "file": "sfx/typewriter.wav",
+          "at": 0.3
+        },
+        {
+          "file": "sfx/stamp.wav",
+          "at": 1.6
+        }
+      ],
+      "hud": {
+        "step": 7
+      },
+      "source": "ANN (Korea Herald) citing Chainalysis, Dec 2025",
+      "imageIdea": "calendar filling over 45 days"
+    },
+    {
+      "id": "tech-087-ch7-customers",
+      "scene": "techPhone",
+      "narration": "What about customers? Binance reopened withdrawals after about forty-eight hours and says it has replenished ninety-eight percent of the stolen coins from reserves.",
+      "data": {
+        "app": "Exchange",
+        "screenTitle": "Withdrawals",
+        "value": "Reopened",
+        "rows": [
+          "Paused about 48 hours",
+          "98% of coins replenished",
+          "Losses covered, says exchange"
+        ],
+        "banner": "Withdrawals available again"
+      },
+      "sfx": [
+        {
+          "file": "sfx/whoosh.wav",
+          "at": 0
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 1
+        }
+      ],
+      "hud": {
+        "step": 7
+      },
+      "source": "Fortune Nov 3 2026",
+      "imageIdea": "phone with green reopened banner"
+    },
+    {
+      "id": "tech-088-ch7-why",
+      "scene": "techStatGrid",
+      "narration": "Why does North Korea do this? It's cut off from the global financial system, and stolen crypto has become a key source of money.",
+      "data": {
+        "tiles": [
+          {
+            "label": "DPRK 2025",
+            "value": "$2.02B",
+            "trend": "up"
+          },
+          {
+            "label": "VS 2024",
+            "value": "+51%",
+            "trend": "up"
+          },
+          {
+            "label": "SINCE 2022",
+            "value": "$6.75B",
+            "trend": "up"
+          }
+        ]
+      },
+      "sfx": [
+        {
+          "file": "sfx/whoosh.wav",
+          "at": 0
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 0.5
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 0.8
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 1.1
+        }
+      ],
+      "hud": {
+        "step": 7
+      },
+      "source": "Chainalysis via The Record and UPI, Dec 2025",
+      "imageIdea": "rising tiles"
+    },
+    {
+      "id": "tech-089-ch7-rehook",
+      "scene": "techHeadline",
+      "narration": "So what should have stopped this, and what can you do so you're never the one who clicks? That's the payoff.",
+      "data": {
+        "kicker": "UP NEXT",
+        "top": "WHAT YOU",
+        "main": "CAN DO"
+      },
+      "sfx": [
+        {
+          "file": "sfx/whoosh.wav",
+          "at": 0
+        },
+        {
+          "file": "sfx/impact.wav",
+          "at": 0.35,
+          "volume": 0.4
+        }
+      ],
+      "hud": {
+        "step": 7
+      },
+      "source": "none",
+      "imageIdea": "shield assembling"
+    },
+    {
+      "id": "tech-090-ch8-title",
+      "scene": "techHeadline",
+      "narration": "Chapter eight, the payoff. First, let's line up every point where this attack could have been stopped. There were at least six.",
+      "data": {
+        "kicker": "CHAPTER 8",
+        "top": "THE PAYOFF",
+        "main": "SIX FAILURES"
+      },
+      "sfx": [
+        {
+          "file": "sfx/whoosh.wav",
+          "at": 0
+        },
+        {
+          "file": "sfx/impact.wav",
+          "at": 0.35,
+          "volume": 0.4
+        }
+      ],
+      "hud": {
+        "step": 8
+      },
+      "source": "Analysis based on Binance report",
+      "imageIdea": "glitch title"
+    },
+    {
+      "id": "tech-091-ch8-failures",
+      "scene": "techChecklist",
+      "narration": "A tool from a search result. A test on a work laptop. Undetected malware. An AI tool with too much reach. A token on a laptop. A signer that obeyed.",
+      "data": {
+        "title": "WHERE IT BROKE",
+        "items": [
+          "Tool from a search result",
+          "Test on a work laptop",
+          "Malware not detected",
+          "AI tool with wide reach",
+          "Token left on a laptop",
+          "Signer obeyed"
+        ],
+        "state": "fail"
+      },
+      "sfx": [
+        {
+          "file": "sfx/whoosh.wav",
+          "at": 0
+        },
+        {
+          "file": "sfx/pin.wav",
+          "at": 0.6
+        },
+        {
+          "file": "sfx/pin.wav",
+          "at": 1
+        },
+        {
+          "file": "sfx/pin.wav",
+          "at": 1.4
+        },
+        {
+          "file": "sfx/pin.wav",
+          "at": 1.8
+        },
+        {
+          "file": "sfx/pin.wav",
+          "at": 2.2
+        },
+        {
+          "file": "sfx/pin.wav",
+          "at": 2.6
+        }
+      ],
+      "hud": {
+        "step": 8
+      },
+      "source": "Analysis based on Binance report (SafeDep, Fortune)",
+      "imageIdea": "six items turning red one by one"
+    },
+    {
+      "id": "tech-092-ch8-fixes",
+      "scene": "techVersus",
+      "narration": "Each one has a known fix: run outside code in sandboxes, keep tokens short-lived, limit what AI tools can touch, and require extra approval for unusual signing.",
+      "data": {
+        "left": {
+          "title": "WHAT FAILED",
+          "items": [
+            "Long-lived token",
+            "Broad AI access",
+            "Signer trusts requests"
+          ]
+        },
+        "right": {
+          "title": "KNOWN FIX",
+          "items": [
+            "Short-lived tokens",
+            "Least-privilege AI",
+            "Extra signing approval"
+          ]
+        },
+        "leftTone": "bad"
+      },
+      "sfx": [
+        {
+          "file": "sfx/whoosh.wav",
+          "at": 0
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 0.6
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 1
+        }
+      ],
+      "hud": {
+        "step": 8
+      },
+      "source": "Analysis; SecurityHQ (transaction path); SafeDep (sandbox)",
+      "imageIdea": "red-to-green transformation"
+    },
+    {
+      "id": "tech-093-ch8-at-work",
+      "scene": "techChecklist",
+      "narration": "If you work at any tech company, check your own laptop today: no long-lived tokens lying around, no outside code run on work machines, and report odd recruiter messages.",
+      "data": {
+        "title": "AT WORK, TODAY",
+        "items": [
+          "No long-lived tokens",
+          "No outside code at work",
+          "Report odd recruiters"
+        ],
+        "state": "done"
+      },
+      "sfx": [
+        {
+          "file": "sfx/whoosh.wav",
+          "at": 0
+        },
+        {
+          "file": "sfx/pin.wav",
+          "at": 0.6
+        },
+        {
+          "file": "sfx/pin.wav",
+          "at": 1
+        },
+        {
+          "file": "sfx/pin.wav",
+          "at": 1.4
+        }
+      ],
+      "hud": {
+        "step": 8
+      },
+      "source": "Analysis based on Binance report",
+      "imageIdea": "green checklist on a laptop outline"
+    },
+    {
+      "id": "tech-094-ch8-maya",
+      "scene": "techStatGrid",
+      "narration": "Now, you. Meet Maya, a hypothetical twenty-eight-year-old developer. She's job hunting, and she keeps some of her savings in crypto.",
+      "data": {
+        "tiles": [
+          {
+            "label": "AGE",
+            "value": "28",
+            "trend": "flat"
+          },
+          {
+            "label": "JOB",
+            "value": "Dev",
+            "trend": "flat"
+          },
+          {
+            "label": "HUNTING",
+            "value": "Yes",
+            "trend": "up"
+          },
+          {
+            "label": "HOLDS CRYPTO",
+            "value": "Yes",
+            "trend": "flat"
+          }
+        ]
+      },
+      "sfx": [
+        {
+          "file": "sfx/whoosh.wav",
+          "at": 0
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 0.5
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 0.8
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 1.1
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 1.4
+        }
+      ],
+      "hud": {
+        "step": 8
+      },
+      "source": "Hypothetical character",
+      "imageIdea": "profile tiles, illustrated avatar (not a real person)"
+    },
+    {
+      "id": "tech-095-ch8-flags",
+      "scene": "techChecklist",
+      "narration": "First, the job hunt. Red flags: a company you can't verify, pressure to move fast, and a test that asks you to download and run their code.",
+      "data": {
+        "title": "RECRUITER RED FLAGS",
+        "items": [
+          "Company hard to verify",
+          "Rush and pressure",
+          "Download and run our repo",
+          "Interview moves to chat app"
+        ],
+        "state": "fail"
+      },
+      "sfx": [
+        {
+          "file": "sfx/whoosh.wav",
+          "at": 0
+        },
+        {
+          "file": "sfx/pin.wav",
+          "at": 0.6
+        },
+        {
+          "file": "sfx/pin.wav",
+          "at": 1
+        },
+        {
+          "file": "sfx/pin.wav",
+          "at": 1.4
+        },
+        {
+          "file": "sfx/pin.wav",
+          "at": 1.8
+        }
+      ],
+      "hud": {
+        "step": 8
+      },
+      "source": "Joint advisories on fake-interview campaigns; Binance case details",
+      "imageIdea": "red warning checklist"
+    },
+    {
+      "id": "tech-096-ch8-verify",
+      "scene": "techChat",
+      "narration": "Maya's move: before any test, she finds the company's official website herself, and emails a careers address listed there to confirm the recruiter is real.",
+      "data": {
+        "window": "Mail",
+        "sender": "Maya",
+        "lines": [
+          "Hi, is this recruiter on your team?",
+          "Confirming before I start the test."
+        ],
+        "typing": true
+      },
+      "sfx": [
+        {
+          "file": "sfx/whoosh.wav",
+          "at": 0
+        },
+        {
+          "file": "sfx/typewriter.wav",
+          "at": 0.3
+        }
+      ],
+      "hud": {
+        "step": 8
+      },
+      "source": "Hypothetical example",
+      "imageIdea": "email draft typing"
+    },
+    {
+      "id": "tech-097-ch8-sandbox",
+      "scene": "techVersus",
+      "narration": "If she runs a coding test, never on a work laptop, and only inside a disposable virtual machine she can delete afterwards. Remember, setup alone ran the malware.",
+      "data": {
+        "left": {
+          "title": "DO",
+          "items": [
+            "Disposable VM",
+            "Read setup scripts first"
+          ]
+        },
+        "right": {
+          "title": "DON'T",
+          "items": [
+            "Work laptop",
+            "Run setup blind"
+          ]
+        },
+        "leftTone": "good"
+      },
+      "sfx": [
+        {
+          "file": "sfx/whoosh.wav",
+          "at": 0
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 0.6
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 1
+        }
+      ],
+      "hud": {
+        "step": 8
+      },
+      "source": "SafeDep (malware ran during setup; sandbox lesson)",
+      "imageIdea": "green DO, red DON'T"
+    },
+    {
+      "id": "tech-098-ch8-downloads",
+      "scene": "techFeed",
+      "narration": "Second, downloads. Skip sponsored results. Type the official address yourself, or use the link in the project's own documentation. That's exactly what failed in June.",
+      "data": {
+        "title": "SAFE DOWNLOADS",
+        "items": [
+          {
+            "tag": "SKIP",
+            "text": "Sponsored search results"
+          },
+          {
+            "tag": "DO",
+            "text": "Type the official address"
+          },
+          {
+            "tag": "DO",
+            "text": "Use the project's own docs"
+          }
+        ]
+      },
+      "sfx": [
+        {
+          "file": "sfx/whoosh.wav",
+          "at": 0
+        },
+        {
+          "file": "sfx/pin.wav",
+          "at": 0.5
+        },
+        {
+          "file": "sfx/pin.wav",
+          "at": 0.9
+        },
+        {
+          "file": "sfx/pin.wav",
+          "at": 1.3
+        }
+      ],
+      "hud": {
+        "step": 8
+      },
+      "source": "Fortune (ad); Binance report (search engine)",
+      "imageIdea": "ad result crossed out"
+    },
+    {
+      "id": "tech-099-ch8-48h",
+      "scene": "techBigStat",
+      "narration": "Third, your crypto. Binance customers couldn't withdraw for about forty-eight hours. Imagine Maya needs that money for rent during those two days.",
+      "data": {
+        "value": 48,
+        "prefix": "",
+        "suffix": "h",
+        "label": "WITHDRAWALS PAUSED",
+        "sub": "Your money, but no access",
+        "points": []
+      },
+      "sfx": [
+        {
+          "file": "sfx/impact.wav",
+          "at": 0,
+          "volume": 0.5
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 1.2
+        }
+      ],
+      "hud": {
+        "step": 8
+      },
+      "source": "Fortune Nov 3 2026",
+      "imageIdea": "countdown on a locked wallet"
+    },
+    {
+      "id": "tech-100-ch8-buckets",
+      "scene": "techStatGrid",
+      "narration": "So Maya keeps rent and her emergency fund in a regular bank account. Crypto is only for money she won't need on short notice.",
+      "data": {
+        "tiles": [
+          {
+            "label": "RENT AND BILLS",
+            "value": "Bank",
+            "trend": "flat"
+          },
+          {
+            "label": "EMERGENCY FUND",
+            "value": "Bank",
+            "trend": "flat"
+          },
+          {
+            "label": "LONG-TERM",
+            "value": "Crypto",
+            "trend": "up"
+          }
+        ]
+      },
+      "sfx": [
+        {
+          "file": "sfx/whoosh.wav",
+          "at": 0
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 0.5
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 0.8
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 1.1
+        }
+      ],
+      "hud": {
+        "step": 8
+      },
+      "source": "Hypothetical example; general practice",
+      "imageIdea": "money sorted into buckets"
+    },
+    {
+      "id": "tech-101-ch8-custody",
+      "scene": "techVersus",
+      "narration": "For long-term coins, she could consider self-custody, like a hardware wallet. The trade-off: lose your recovery phrase, and nobody can get your coins back.",
+      "data": {
+        "left": {
+          "title": "ON EXCHANGE",
+          "items": [
+            "Easy to trade",
+            "Exchange's security"
+          ]
+        },
+        "right": {
+          "title": "SELF-CUSTODY",
+          "items": [
+            "You hold the keys",
+            "You carry the risk"
+          ]
+        },
+        "leftTone": "good"
+      },
+      "sfx": [
+        {
+          "file": "sfx/whoosh.wav",
+          "at": 0
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 0.6
+        },
+        {
+          "file": "sfx/pop.wav",
+          "at": 1
+        }
+      ],
+      "hud": {
+        "step": 8
+      },
+      "source": "General explainer",
+      "imageIdea": "key icon on right"
+    },
+    {
+      "id": "tech-102-ch8-lockdown",
+      "scene": "techChecklist",
+      "narration": "If she keeps coins on an exchange, she locks the account down: an authenticator app or passkey instead of text messages, plus a withdrawal allowlist if offered.",
+      "data": {
+        "title": "ACCOUNT LOCKDOWN",
+        "items": [
+          "Authenticator app or passkey",
+          "Withdrawal allowlist",
+          "Unique password",
+          "Login alerts on"
+        ],
+        "state": "done"
+      },
+      "sfx": [
+        {
+          "file": "sfx/whoosh.wav",
+          "at": 0
+        },
+        {
+          "file": "sfx/pin.wav",
+          "at": 0.6
+        },
+        {
+          "file": "sfx/pin.wav",
+          "at": 1
+        },
+        {
+          "file": "sfx/pin.wav",
+          "at": 1.4
+        },
+        {
+          "file": "sfx/pin.wav",
+          "at": 1.8
+        }
+      ],
+      "hud": {
+        "step": 8
+      },
+      "source": "General security practice (options vary by exchange)",
+      "imageIdea": "green checklist"
+    },
+    {
+      "id": "tech-103-ch8-refund",
+      "scene": "techChat",
+      "narration": "And watch for the follow-up scam. After big hacks, fake support agents message people with refund links. Real support never asks for your recovery phrase.",
+      "data": {
+        "window": "Messages",
+        "sender": "'Support'",
+        "lines": [
+          "Your account was affected.",
+          "Claim your refund here: [link]",
+          "Enter your recovery phrase to verify."
+        ],
+        "typing": false
+      },
+      "sfx": [
+        {
+          "file": "sfx/whoosh.wav",
+          "at": 0
+        },
+        {
+          "file": "sfx/typewriter.wav",
+          "at": 0.3
+        }
+      ],
+      "hud": {
+        "step": 8
+      },
+      "source": "General scam pattern; protection tip",
+      "imageIdea": "suspicious DM with red warning overlay"
+    },
+    {
+      "id": "tech-104-ch8-answer",
+      "scene": "techSourceCheck",
+      "narration": "So, how do you take six point three billion without cracking any encryption? You earn trust, collect access, and get the signer to sign for you.",
+      "data": {
+        "claim": "No cracked encryption. Trust, access, and a signer that obeyed.",
+        "highlight": "a signer that obeyed",
+        "source": "Binance initial report",
+        "detail": "Nov 3 2026, plus analyses",
+        "verdict": "THE ANSWER"
+      },
+      "sfx": [
+        {
+          "file": "sfx/whoosh.wav",
+          "at": 0
+        },
+        {
+          "file": "sfx/typewriter.wav",
+          "at": 0.3
+        },
+        {
+          "file": "sfx/stamp.wav",
+          "at": 1.6
+        }
+      ],
+      "hud": {
+        "step": 8
+      },
+      "source": "Binance report via Fortune, SafeDep, SecurityHQ",
+      "imageIdea": "final claim card"
+    },
+    {
+      "id": "tech-105-ch8-recap",
+      "scene": "techTimeline",
+      "narration": "Quick recap: a poisoned download in June, a fake job in September, an AI pivot on October twentieth, and the heist on October twenty-ninth.",
+      "data": {
+        "title": "RECAP",
+        "nodes": [
+          {
+            "label": "JUNE",
+            "sub": "Bad download"
+          },
+          {
+            "label": "SEPT",
+            "sub": "Fake job"
+          },
+          {
+            "label": "OCT 20",
+            "sub": "AI pivot"
+          },
+          {
+            "label": "OCT 29",
+            "sub": "$6.3B gone"
+          }
+        ],
+        "active": 3
+      },
+      "sfx": [
+        {
+          "file": "sfx/whoosh.wav",
+          "at": 0
+        },
+        {
+          "file": "sfx/pin.wav",
+          "at": 0.5
+        },
+        {
+          "file": "sfx/pin.wav",
+          "at": 0.85
+        },
+        {
+          "file": "sfx/pin.wav",
+          "at": 1.2
+        },
+        {
+          "file": "sfx/pin.wav",
+          "at": 1.55
+        }
+      ],
+      "hud": {
+        "step": 8
+      },
+      "source": "Binance initial report",
+      "imageIdea": "all nodes lit"
+    },
+    {
+      "id": "tech-106-ch8-share",
+      "scene": "techHeadline",
+      "narration": "If you know a developer who's job hunting, or a friend who keeps everything on an exchange, share this video with them. It might save them.",
+      "data": {
+        "kicker": "SHARE",
+        "top": "SEND THIS TO",
+        "main": "A FRIEND"
+      },
+      "sfx": [
+        {
+          "file": "sfx/whoosh.wav",
+          "at": 0
+        },
+        {
+          "file": "sfx/impact.wav",
+          "at": 0.35,
+          "volume": 0.4
+        }
+      ],
+      "hud": {
+        "step": 8
+      },
+      "source": "none",
+      "imageIdea": "share icon pulsing"
+    },
+    {
+      "id": "tech-107-ch8-disclaimer",
+      "scene": "techFeed",
+      "narration": "Quick note: this video is for education, not personal financial or security advice. This case is still developing, so check the latest reports.",
+      "data": {
+        "title": "DISCLAIMER",
+        "items": [
+          {
+            "tag": "EDUCATION",
+            "text": "Not personal financial advice"
+          },
+          {
+            "tag": "DEVELOPING",
+            "text": "Facts may change as reports update"
+          }
+        ]
+      },
+      "sfx": [
+        {
+          "file": "sfx/whoosh.wav",
+          "at": 0
+        },
+        {
+          "file": "sfx/pin.wav",
+          "at": 0.5
+        },
+        {
+          "file": "sfx/pin.wav",
+          "at": 0.9
+        }
+      ],
+      "hud": {
+        "step": 8
+      },
+      "source": "none",
+      "imageIdea": "disclaimer cards"
+    },
+    {
+      "id": "tech-108-closing",
+      "scene": "techHeadline",
+      "narration": "Fifty-seven attacks were stopped. One got through, and it cost six billion dollars. The weakest link is rarely the code. It's the click.",
+      "data": {
+        "kicker": "ONE LAST THING",
+        "top": "THE WEAKEST LINK",
+        "main": "IS THE CLICK"
+      },
+      "sfx": [
+        {
+          "file": "sfx/whoosh.wav",
+          "at": 0
+        },
+        {
+          "file": "sfx/impact.wav",
+          "at": 0.35,
+          "volume": 0.4
+        }
+      ],
+      "hud": {
+        "step": 8
+      },
+      "source": "Binance via SafeDep/Fortune (57 attempts)",
+      "imageIdea": "final glitch headline, fade to black"
+    }
+  ],
+  "config": {
+    "theme": "darkNeon",
+    "steps": [
+      "SCALE",
+      "VAULT",
+      "FOOTHOLD",
+      "LURE",
+      "PIVOT",
+      "HEIST",
+      "MONEY",
+      "DEFEND"
+    ],
+    "footer": "Educational content · not financial advice"
+  }
+}
