@@ -1,9 +1,15 @@
 ---
 name: vox-to-remotion
-description: Turn a tech-explainer / vox-finance-explainer JSON scene script (.txt or .json) into a rendered Remotion video. Use when the user wants to import, validate, preview or render a Vox scene script, add cut-out images or voiceover to it, or change how a vox template (voxTitle, voxCutout, voxChart, voxBigNumber, voxBubbles, voxNote) looks.
+description: Turn a JSON scene script (.txt or .json) into a rendered Remotion video. Handles both the light vox* templates (voxTitle, voxCutout, voxChart, voxBigNumber, voxBubbles, voxNote) and the dark-neon tech* templates (techHeadline, techChat, techHub, techTerminal, etc. with a videoConfig step bar). Use when the user wants to import, validate, preview or render a scene script, add images or voiceover, or change how a template looks.
 ---
 
-# Vox script → Remotion video
+# Scene script → Remotion video
+
+Two formats, detected automatically by the importer:
+- **vox\*** scenes → `VoxVideo` composition (`src/vox/`), light editorial look.
+- **tech\*** scenes + a `videoConfig` block → `TechVideo` composition (`src/tech/`), dark neon
+  look with a step bar, status chip and footer. Full field limits and SFX timings are in
+  `docs/tech-templates-spec.md`. The `ticker` in videoConfig is intentionally **not rendered**.
 
 This repo has a Remotion engine (`src/vox/`) that renders the scene scripts written by the
 `tech-explainer` / `vox-finance-explainer` skills. One scene object = one timed sequence.
